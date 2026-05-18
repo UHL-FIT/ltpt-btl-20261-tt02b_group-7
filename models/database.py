@@ -28,6 +28,22 @@ def initialize_db():
             name TEXT UNIQUE NOT NULL
         )
     ''')
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS budgets (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            category TEXT NOT NULL,
+            month TEXT NOT NULL,
+            limit_amount REAL NOT NULL,
+            UNIQUE(category, month)
+        )
+    ''')
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS savings_goals (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            month TEXT NOT NULL UNIQUE,
+            goal_amount REAL NOT NULL
+        )
+    ''')
     cursor.execute('SELECT COUNT(*) FROM categories')
     if cursor.fetchone()[0] == 0:
         default_cats = ["Ăn uống", "Di chuyển", "Tiền thuê", "Giải trí", "Tiền lương", "Khác"]
