@@ -1,3 +1,5 @@
 customtkinter
 pandas
 matplotlib
+Pillow
+tkcalendar

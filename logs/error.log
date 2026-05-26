@@ -1,0 +1,639 @@
+2026-05-20 20:03:57,727 [ERROR] [verify_test.py:test_system:23] - Kiem thu ghi log loi: Loi gia lap de kiem tra stack trace va logs/error.log!
+Traceback (most recent call last):
+  File "C:\Users\Admin\.gemini\antigravity-ide\brain\bc0d9dcd-751e-4c96-a600-b031ba6149c4\scratch\verify_test.py", line 21, in test_system
+    raise ValueError("Loi gia lap de kiem tra stack trace va logs/error.log!")
+ValueError: Loi gia lap de kiem tra stack trace va logs/error.log!
+2026-05-20 20:03:57,750 [ERROR] [verify_test.py:test_system:48] - Loi khi kiem thu Database/Service:
+Traceback (most recent call last):
+  File "C:\Users\Admin\.gemini\antigravity-ide\brain\bc0d9dcd-751e-4c96-a600-b031ba6149c4\scratch\verify_test.py", line 40, in test_system
+    print(f"-> Lay danh sach danh muc thanh cong: {cats}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ec3' in position 47: character maps to <undefined>
+2026-05-20 20:04:11,113 [ERROR] [verify_test.py:test_system:23] - Kiem thu ghi log loi: Loi gia lap de kiem tra stack trace va logs/error.log!
+Traceback (most recent call last):
+  File "C:\Users\Admin\.gemini\antigravity-ide\brain\bc0d9dcd-751e-4c96-a600-b031ba6149c4\scratch\verify_test.py", line 21, in test_system
+    raise ValueError("Loi gia lap de kiem tra stack trace va logs/error.log!")
+ValueError: Loi gia lap de kiem tra stack trace va logs/error.log!
+2026-05-20 20:26:18,189 [ERROR] [main.py:<module>:13] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 10, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 14, in <module>
+    from views.components.custom_card import SummaryCard
+ModuleNotFoundError: No module named 'views.components'
+2026-05-20 20:48:13,104 [ERROR] [main.py:main:39] - Khởi tạo giao diện MVC thất bại: name 'TEXT_MUTED' is not defined
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 34, in main
+    view = MainWindow()
+  File "d:\Desktop\finance_manager\views\main_window.py", line 75, in __init__
+    self.setup_ui()
+    ~~~~~~~~~~~~~^^
+  File "d:\Desktop\finance_manager\views\main_window.py", line 118, in setup_ui
+    self.setup_topbar()
+    ~~~~~~~~~~~~~~~~~^^
+  File "d:\Desktop\finance_manager\views\main_window.py", line 158, in setup_topbar
+    self.header = HeaderView(
+                  ~~~~~~~~~~^
+        self, self.icons,
+        ^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        help_cb=self.show_help
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\Desktop\finance_manager\views\header_view.py", line 55, in __init__
+    placeholder_text_color=TEXT_MUTED
+                           ^^^^^^^^^^
+NameError: name 'TEXT_MUTED' is not defined
+2026-05-20 21:01:56,543 [ERROR] [main.py:main:39] - Khởi tạo giao diện MVC thất bại: name 'divider' is not defined
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 34, in main
+    view = MainWindow()
+  File "d:\Desktop\finance_manager\views\main_window.py", line 75, in __init__
+    self.setup_ui()
+    ~~~~~~~~~~~~~^^
+  File "d:\Desktop\finance_manager\views\main_window.py", line 118, in setup_ui
+    self.setup_topbar()
+    ~~~~~~~~~~~~~~~~~^^
+  File "d:\Desktop\finance_manager\views\main_window.py", line 158, in setup_topbar
+    self.header = HeaderView(
+                  ~~~~~~~~~~^
+        self, self.icons,
+        ^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        help_cb=self.show_help
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\Desktop\finance_manager\views\header_view.py", line 46, in __init__
+    divider.grid(row=0, column=1, padx=(5, 5))
+    ^^^^^^^
+NameError: name 'divider' is not defined
+2026-05-20 22:31:14,418 [ERROR] [main_window.py:task:400] - Lỗi trong quá trình chạy thread lọc: main thread is not in main loop
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\main_window.py", line 398, in task
+    self.after(0, lambda: self._on_filter_success(res))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 873, in after
+    name = self._register(callit)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1698, in _register
+    self.tk.createcommand(name, f)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+RuntimeError: main thread is not in main loop
+2026-05-20 22:31:18,009 [ERROR] [main_controller.py:task:182] - Lỗi chạy nền tải dữ liệu biểu đồ Dashboard: main thread is not in main loop
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\controllers\main_controller.py", line 180, in task
+    self.view.after(0, lambda: self._on_dashboard_success(category_data, trend_data))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 873, in after
+    name = self._register(callit)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1698, in _register
+    self.tk.createcommand(name, f)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+RuntimeError: main thread is not in main loop
+2026-05-20 22:31:27,097 [ERROR] [main_window.py:task:400] - Lỗi trong quá trình chạy thread lọc: main thread is not in main loop
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\main_window.py", line 398, in task
+    self.after(0, lambda: self._on_filter_success(res))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 873, in after
+    name = self._register(callit)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1698, in _register
+    self.tk.createcommand(name, f)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+RuntimeError: main thread is not in main loop
+2026-05-20 22:31:30,831 [ERROR] [main_controller.py:task:182] - Lỗi chạy nền tải dữ liệu biểu đồ Dashboard: main thread is not in main loop
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\controllers\main_controller.py", line 180, in task
+    self.view.after(0, lambda: self._on_dashboard_success(category_data, trend_data))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 873, in after
+    name = self._register(callit)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1698, in _register
+    self.tk.createcommand(name, f)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+RuntimeError: main thread is not in main loop
+2026-05-21 15:33:58,008 [ERROR] [main.py:main:47] - Khởi tạo giao diện MVC thất bại: ['border_width', 'border_color'] are not supported arguments. Look at the documentation for supported arguments.
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 42, in main
+    view = MainWindow()
+  File "d:\Desktop\finance_manager\views\main_window.py", line 93, in __init__
+    self.setup_ui()
+    ~~~~~~~~~~~~~^^
+  File "d:\Desktop\finance_manager\views\main_window.py", line 138, in setup_ui
+    self.setup_action_bar()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\Desktop\finance_manager\views\main_window.py", line 258, in setup_action_bar
+    self.opt_custom = ctk.CTkOptionMenu(
+                      ~~~~~~~~~~~~~~~~~^
+        self.quick_filter_frame, values=["Tuỳ chỉnh", "2 tuần", "3 tháng", "6 tháng"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        command=self.select_custom_filter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 48, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 46, in __init__
+    check_kwargs_empty(kwargs, raise_error=True)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\utility\utility_functions.py", line 18, in check_kwargs_empty
+    raise ValueError(f"{list(kwargs_dict.keys())} are not supported arguments. Look at the documentation for supported arguments.")
+ValueError: ['border_width', 'border_color'] are not supported arguments. Look at the documentation for supported arguments.
+2026-05-21 16:32:28,580 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.dialogs.filter_dialog.show_cat_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\dialogs\filter_dialog.py", line 197, in show_cat_dropdown
+    self.cat_dropdown_window.place(x=x_dropdown, y=y, width=dropdown_width, height=220)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 16:32:30,255 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.dialogs.filter_dialog.show_cat_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\dialogs\filter_dialog.py", line 197, in show_cat_dropdown
+    self.cat_dropdown_window.place(x=x_dropdown, y=y, width=dropdown_width, height=220)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 16:32:30,607 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.dialogs.filter_dialog.show_cat_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\dialogs\filter_dialog.py", line 197, in show_cat_dropdown
+    self.cat_dropdown_window.place(x=x_dropdown, y=y, width=dropdown_width, height=220)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 16:32:30,944 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.dialogs.filter_dialog.show_cat_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\dialogs\filter_dialog.py", line 197, in show_cat_dropdown
+    self.cat_dropdown_window.place(x=x_dropdown, y=y, width=dropdown_width, height=220)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 16:32:31,265 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.dialogs.filter_dialog.show_cat_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\dialogs\filter_dialog.py", line 197, in show_cat_dropdown
+    self.cat_dropdown_window.place(x=x_dropdown, y=y, width=dropdown_width, height=220)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 16:32:31,696 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.dialogs.filter_dialog.show_cat_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\dialogs\filter_dialog.py", line 197, in show_cat_dropdown
+    self.cat_dropdown_window.place(x=x_dropdown, y=y, width=dropdown_width, height=220)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 16:32:32,007 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.dialogs.filter_dialog.show_cat_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\dialogs\filter_dialog.py", line 197, in show_cat_dropdown
+    self.cat_dropdown_window.place(x=x_dropdown, y=y, width=dropdown_width, height=220)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 18:59:17,417 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.main_window.toggle_date_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\main_window.py", line 892, in toggle_date_dropdown
+    self.date_dropdown.place(x=x, y=y, width=dropdown_w, height=dropdown_h)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 18:59:19,256 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.main_window.toggle_date_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\main_window.py", line 892, in toggle_date_dropdown
+    self.date_dropdown.place(x=x, y=y, width=dropdown_w, height=dropdown_h)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 18:59:19,706 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.main_window.toggle_date_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\main_window.py", line 892, in toggle_date_dropdown
+    self.date_dropdown.place(x=x, y=y, width=dropdown_w, height=dropdown_h)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 18:59:20,065 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.main_window.toggle_date_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\main_window.py", line 892, in toggle_date_dropdown
+    self.date_dropdown.place(x=x, y=y, width=dropdown_w, height=dropdown_h)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 18:59:20,560 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.main_window.toggle_date_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\main_window.py", line 892, in toggle_date_dropdown
+    self.date_dropdown.place(x=x, y=y, width=dropdown_w, height=dropdown_h)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 18:59:20,920 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.main_window.toggle_date_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\main_window.py", line 892, in toggle_date_dropdown
+    self.date_dropdown.place(x=x, y=y, width=dropdown_w, height=dropdown_h)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 18:59:21,255 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.main_window.toggle_date_dropdown: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\main_window.py", line 892, in toggle_date_dropdown
+    self.date_dropdown.place(x=x, y=y, width=dropdown_w, height=dropdown_h)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+2026-05-21 19:47:58,737 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:47:59,443 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:47:59,616 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:00,687 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:01,170 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:01,345 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:01,515 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:01,689 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:02,076 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:02,226 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:02,385 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:02,563 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:02,730 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:02,866 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:48:19,269 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.components.filter_dropdown.show_cat_dropdown: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\components\filter_dropdown.py", line 198, in show_cat_dropdown
+    scaling = self._get_window_scaling()
+  File "D:\Desktop\finance_manager\venv\Lib\site-packages\customtkinter\windows\widgets\scaling\scaling_base_class.py", line 58, in _get_window_scaling
+    return self.__window_scaling
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FilterDropdown' object has no attribute '_CTkScalingBaseClass__window_scaling'. Did you mean: '_CTkScalingBaseClass__widget_scaling'?
+2026-05-21 19:49:10,570 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 19, in <module>
+    from views.dialogs import (
+    ...<7 lines>...
+    )
+  File "d:\Desktop\finance_manager\views\dialogs\__init__.py", line 7, in <module>
+    from .filter_dialog import FilterWindow
+ModuleNotFoundError: No module named 'views.dialogs.filter_dialog'
+2026-05-21 19:49:17,492 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 19, in <module>
+    from views.dialogs import (
+    ...<7 lines>...
+    )
+  File "d:\Desktop\finance_manager\views\dialogs\__init__.py", line 7, in <module>
+    from .filter_dialog import FilterWindow
+ModuleNotFoundError: No module named 'views.dialogs.filter_dialog'
+2026-05-21 19:49:53,812 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 19, in <module>
+    from views.dialogs import (
+    ...<7 lines>...
+    )
+  File "d:\Desktop\finance_manager\views\dialogs\__init__.py", line 7, in <module>
+    from .filter_dialog import FilterWindow
+ModuleNotFoundError: No module named 'views.dialogs.filter_dialog'
+2026-05-21 19:51:19,646 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 18, in <module>
+    from views.components.view_by_dropdown import ViewByDropdown
+ModuleNotFoundError: No module named 'views.components.view_by_dropdown'
+2026-05-21 19:51:51,627 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 18, in <module>
+    from views.components.time_filter_dropdown import TimeFilterDropdown
+ImportError: cannot import name 'TimeFilterDropdown' from 'views.components.time_filter_dropdown' (d:\Desktop\finance_manager\views\components\time_filter_dropdown.py)
+2026-05-21 19:51:59,152 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 18, in <module>
+    from views.components.view_by_dropdown import ViewByDropdown
+ModuleNotFoundError: No module named 'views.components.view_by_dropdown'
+2026-05-21 19:59:49,418 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 18, in <module>
+    from views.components.view_by_dropdown import ViewByDropdown
+ModuleNotFoundError: No module named 'views.components.view_by_dropdown'
+2026-05-21 20:00:56,769 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "D:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "D:\Desktop\finance_manager\views\main_window.py", line 19, in <module>
+    from views.dialogs import (
+    ...<7 lines>...
+    )
+  File "D:\Desktop\finance_manager\views\dialogs\__init__.py", line 7, in <module>
+    from .filter_dialog import FilterWindow
+ModuleNotFoundError: No module named 'views.dialogs.filter_dialog'
+2026-05-21 20:01:10,068 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "D:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "D:\Desktop\finance_manager\views\main_window.py", line 19, in <module>
+    from views.dialogs import (
+    ...<7 lines>...
+    )
+  File "D:\Desktop\finance_manager\views\dialogs\__init__.py", line 7, in <module>
+    from .filter_view import FilterWindow
+  File "D:\Desktop\finance_manager\views\dialogs\filter_view.py", line 5, in <module>
+    from views.utils.logger import logger, safe_execution
+ModuleNotFoundError: No module named 'views.utils'
+2026-05-21 21:40:42,442 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 19, in <module>
+    from views.dialogs import (
+    ...<7 lines>...
+    )
+  File "d:\Desktop\finance_manager\views\dialogs\__init__.py", line 4, in <module>
+    from .budget_dialog import BudgetWindow
+ModuleNotFoundError: No module named 'views.dialogs.budget_dialog'
+2026-05-21 21:40:46,022 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 18, in <module>
+    from views.main_window import MainWindow
+  File "d:\Desktop\finance_manager\views\main_window.py", line 19, in <module>
+    from views.dialogs import (
+    ...<7 lines>...
+    )
+  File "d:\Desktop\finance_manager\views\dialogs\__init__.py", line 4, in <module>
+    from .budget_dialog import BudgetWindow
+ModuleNotFoundError: No module named 'views.dialogs.budget_dialog'
+2026-05-21 23:33:12,744 [ERROR] [decorators.py:wrapper:31] - Lỗi xảy ra tại views.main_window.show_dashboard: transparency is not allowed for this attribute
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\views\decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\finance_manager\views\main_window.py", line 717, in show_dashboard
+    self.dashboard_window = DashboardWindow(self, self.controller, initial_tab="stats")
+                            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Desktop\finance_manager\views\dialogs\dashboard_dialog.py", line 141, in __init__
+    b = ctk.CTkButton(
+        self.tabs_container,
+    ...<10 lines>...
+        command=lambda k=key: self._switch_tab(k)
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 63, in __init__
+    self._border_color: Union[str, Tuple[str, str]] = ThemeManager.theme["CTkButton"]["border_color"] if border_color is None else self._check_color_type(border_color)
+                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\appearance_mode\appearance_mode_base_class.py", line 55, in _check_color_type
+    raise ValueError(f"transparency is not allowed for this attribute")
+ValueError: transparency is not allowed for this attribute
+2026-05-22 00:27:20,416 [ERROR] [dashboard_dialog.py:_on_window_destroy:167] - Lỗi dọn dẹp tab budget: name 'logger' is not defined
+2026-05-22 00:29:34,766 [ERROR] [dashboard_dialog.py:_on_window_destroy:167] - Lỗi dọn dẹp tab budget: name 'logger' is not defined
+2026-05-22 00:30:48,665 [ERROR] [dashboard_dialog.py:_on_window_destroy:167] - Lỗi dọn dẹp tab budget: name 'logger' is not defined
+2026-05-22 00:32:31,880 [ERROR] [dashboard_dialog.py:_on_window_destroy:167] - Lỗi dọn dẹp tab budget: name 'logger' is not defined
+2026-05-22 00:33:58,528 [ERROR] [dashboard_dialog.py:_on_window_destroy:167] - Lỗi dọn dẹp tab budget: name 'logger' is not defined
+2026-05-22 00:34:43,771 [ERROR] [dashboard_dialog.py:_on_window_destroy:167] - Lỗi dọn dẹp tab budget: name 'logger' is not defined
+2026-05-22 00:35:47,077 [ERROR] [main.py:<module>:21] - Lỗi import các module hệ thống!
+Traceback (most recent call last):
+  File "d:\Desktop\finance_manager\main.py", line 17, in <module>
+    from models.database import initialize_db
+ImportError: cannot import name 'initialize_db' from 'models.database' (d:\Desktop\finance_manager\models\database.py)
+2026-05-26 21:46:07,399 [ERROR] [finance_service.py:import_from_csv:173] - Lỗi khi nhập dữ liệu từ file CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:46:07,400 [ERROR] [main_controller.py:task:96] - Lỗi chạy nền nhập dữ liệu CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\controllers\main_controller.py", line 93, in task
+    self.service.import_from_csv(filepath)
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:46:07,413 [ERROR] [main_controller.py:_on_import_error:110] - Lỗi nhập dữ liệu CSV trả về View: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:46:14,228 [ERROR] [finance_service.py:import_from_csv:173] - Lỗi khi nhập dữ liệu từ file CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:46:14,229 [ERROR] [main_controller.py:task:96] - Lỗi chạy nền nhập dữ liệu CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\controllers\main_controller.py", line 93, in task
+    self.service.import_from_csv(filepath)
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:46:14,244 [ERROR] [main_controller.py:_on_import_error:110] - Lỗi nhập dữ liệu CSV trả về View: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:50:09,742 [ERROR] [finance_service.py:import_from_csv:173] - Lỗi khi nhập dữ liệu từ file CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:50:09,743 [ERROR] [main_controller.py:task:96] - Lỗi chạy nền nhập dữ liệu CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\controllers\main_controller.py", line 93, in task
+    self.service.import_from_csv(filepath)
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:50:09,748 [ERROR] [main_controller.py:_on_import_error:110] - Lỗi nhập dữ liệu CSV trả về View: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:51:01,785 [ERROR] [finance_service.py:import_from_csv:173] - Lỗi khi nhập dữ liệu từ file CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:51:01,788 [ERROR] [main_controller.py:task:96] - Lỗi chạy nền nhập dữ liệu CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\controllers\main_controller.py", line 93, in task
+    self.service.import_from_csv(filepath)
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:51:01,803 [ERROR] [main_controller.py:_on_import_error:110] - Lỗi nhập dữ liệu CSV trả về View: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:51:08,164 [ERROR] [finance_service.py:import_from_csv:173] - Lỗi khi nhập dữ liệu từ file CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:51:08,165 [ERROR] [main_controller.py:task:96] - Lỗi chạy nền nhập dữ liệu CSV: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+Traceback (most recent call last):
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\controllers\main_controller.py", line 93, in task
+    self.service.import_from_csv(filepath)
+  File "C:\Users\huytr\Documents\VS Code\Python\BTL\QuanLyChiTieuCaNhan_Final_version\services\finance_service.py", line 152, in import_from_csv
+    raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
+ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-05-26 21:51:08,171 [ERROR] [main_controller.py:_on_import_error:110] - Lỗi nhập dữ liệu CSV trả về View: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
