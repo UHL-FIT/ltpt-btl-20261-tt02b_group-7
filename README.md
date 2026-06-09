@@ -51,8 +51,7 @@ finance_manager/
 Vui lòng tham khảo các tệp tin đính kèm để hiểu rõ hơn về hệ thống:
 1. **[UPDATE.md](UPDATE.md):** Đọc để biết ứng dụng đã cải tiến Engine xử lý Pandas và thay đổi góc nhìn (Default View) như thế nào.
 2. **[SYS_MAP.md](SYS_MAP.md):** Đọc để xem Sơ đồ Kiến trúc Hệ thống chuẩn MVC của dự án này hoạt động ra sao.
-3. **[QA_Report.md](QA_Report.md):** Báo cáo kiểm định chất lượng (QA) chi tiết của hệ thống.
-4. **huong_dan_su_dung.pdf:** Cẩm nang cho người dùng cuối.
+3. **huong_dan_su_dung.pdf:** Cẩm nang cho người dùng cuối.
 
 ---
 
