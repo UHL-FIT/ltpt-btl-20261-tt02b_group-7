@@ -133,11 +133,11 @@ class MainWindow(ctk.CTk):
         self.grid_rowconfigure(3, weight=1)
         self.grid_columnconfigure(0, weight=1)
         
-        self.setup_topbar()
-        self.setup_summary_strip()
-        self.setup_action_bar()
-        self.setup_main_table()
-        self.setup_bottom_bar()
+        self.setup_topbar() # Khởi tạo thanh tiêu đề trên cùng (Header)
+        self.setup_summary_strip() # Khởi tạo dải thẻ tóm tắt tổng quan
+        self.setup_action_bar() # Khởi tạo thanh thao tác phụ với nút thêm giao dịch và bộ lọc
+        self.setup_main_table() # Khởi tạo bảng hiển thị danh sách giao dịch chính
+        self.setup_bottom_bar() # Khởi tạo thanh trạng thái chân trang với thao tác hàng loạt và phân trang
 
     # Tập trung tiêu điểm con trỏ vào cửa sổ nếu cửa sổ đó đang mở
     def _focus_if_exists(self, window_attr):

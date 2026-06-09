@@ -69,25 +69,21 @@ def format_entry_amount(entry, event=None):
     try:
         if '.' in content:
             parts = content.split('.')
-            # Giữ lại dấu trừ nếu có
-            prefix = "-" if parts[0].startswith('-') else ""
             clean_int = "".join([c for c in parts[0] if c.isdigit()])
             if clean_int:
                 int_part = f"{int(clean_int):,}"
-                int_part = prefix + int_part
             else:
-                int_part = prefix
+                int_part = ""
             
             # Chỉ lấy các số cho phần thập phân
             clean_dec = "".join([c for c in parts[1] if c.isdigit()])
             formatted = int_part + '.' + clean_dec
         else:
-            prefix = "-" if content.startswith('-') else ""
             clean_int = "".join([c for c in content if c.isdigit()])
             if clean_int:
-                formatted = prefix + f"{int(clean_int):,}"
+                formatted = f"{int(clean_int):,}"
             else:
-                formatted = prefix
+                formatted = ""
                 
         idx = entry.index("insert")
         old_len = len(val)

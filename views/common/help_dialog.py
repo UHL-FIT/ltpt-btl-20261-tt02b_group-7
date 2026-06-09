@@ -4,9 +4,11 @@ import customtkinter as ctk
 from views.core.theme_styles import *
 from views.core.ui_decorators import safe_execution
 
+
 # Khai báo lớp HelpWindow hiển thị hộp thoại hướng dẫn sử dụng tài liệu
 class HelpWindow(ctk.CTkToplevel):
     # Khởi tạo hộp thoại hướng dẫn sử dụng
+    '''
     def __init__(self, master, icons, **kwargs):
         """
         Cửa sổ popup kích hoạt mở tài liệu huong_dan_su_dung.pdf trên Hệ điều hành.
@@ -37,7 +39,7 @@ class HelpWindow(ctk.CTkToplevel):
         
         btn_open_pdf = ctk.CTkButton(self, text="Mở file PDF Hướng dẫn", font=FONT_TEXT_LARGE, fg_color=ACCENT_BLUE, command=self.open_pdf)
         btn_open_pdf.pack(pady=20)
-
+    '''
     # Mở tệp tin PDF hướng dẫn sử dụng trên máy tính của người dùng
     @safe_execution("Lỗi mở tài liệu hướng dẫn")
     def open_pdf(self):
