@@ -637,3 +637,23 @@ Traceback (most recent call last):
     raise ValueError("Cột 'date' chứa định dạng ngày tháng không hợp lệ.")
 ValueError: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
 2026-05-26 21:51:08,171 [ERROR] [main_controller.py:_on_import_error:110] - Lỗi nhập dữ liệu CSV trả về View: Cột 'date' chứa định dạng ngày tháng không hợp lệ.
+2026-06-10 08:23:11,403 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_dashboard: can't invoke "bind" command: application has been destroyed
+Traceback (most recent call last):
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 713, in show_dashboard
+    self.dashboard_window = DashboardWindow(self, self.controller, initial_tab="stats")
+                            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\dashboard\dashboard_window.py", line 21, in __init__
+    super().__init__(master, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 84, in __init__
+    self.bind('<Configure>', self._update_dimensions_event)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1545, in bind
+    return self._bind(('bind', self._w), sequence, func, add)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1499, in _bind
+    self.tk.call(what + (sequence, cmd))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: can't invoke "bind" command: application has been destroyed

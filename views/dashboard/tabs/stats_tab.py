@@ -84,9 +84,15 @@ class StatsTab(BaseTab):
         self.donut_container = ctk.CTkFrame(self.avail_body, fg_color="transparent")
         self.donut_container.pack(side="left", fill="both", expand=True)
         
-        self.legend_container = ctk.CTkFrame(self.avail_body, fg_color="transparent", width=160)
+        self.legend_container = ctk.CTkScrollableFrame(
+            self.avail_body,
+            fg_color="transparent",
+            width=165,
+            scrollbar_button_color=BORDER_COLOR,
+            scrollbar_button_hover_color=PANEL_BG_HOVER,
+            corner_radius=0
+        )
         self.legend_container.pack(side="right", fill="y", padx=(10, 0))
-        self.legend_container.pack_propagate(False)
         
         self.donut_figure = plt.figure(figsize=(3, 3), facecolor=PANEL_BG)
         self.donut_ax = self.donut_figure.add_subplot(111)
@@ -180,7 +186,8 @@ class StatsTab(BaseTab):
                     sel_dt = datetime.strptime(self.selected_month, "%Y-%m")
                     month_mask = (df['date'].dt.year == sel_dt.year) & (df['date'].dt.month == sel_dt.month)
                     df_month = df[month_mask].copy()
-                except Exception:
+                except Exception as ex:
+                    logger.error(f"LỖI LỌC THÁNG: {ex}", exc_info=True)
                     df_month = df.copy()
             else:
                 df_month = df.copy()
@@ -309,7 +316,6 @@ class StatsTab(BaseTab):
 
         # 4. Dự báo chi tiêu (Spending Forecast)
         try:
-            from datetime import datetime
             now = datetime.now()
             selected_dt = datetime.strptime(self.selected_month, "%Y-%m") if self.selected_month else None
             
@@ -361,10 +367,12 @@ class StatsTab(BaseTab):
         labels = []
         values = []
         if not cat_summary.empty and cat_summary.sum() > 0:
-            # Hiển thị tối đa 7 danh mục lớn nhất, gom phần còn lại thành "Khác"
             if len(cat_summary) > 7:
-                top_cats = cat_summary.head(6)
+                top_cats = cat_summary.head(6).copy()
                 other_sum = cat_summary.iloc[6:].sum()
+                if "Khác" in top_cats.index:
+                    other_sum += top_cats["Khác"]
+                    top_cats = top_cats.drop("Khác")
                 cat_summary = pd.concat([top_cats, pd.Series({"Khác": other_sum})])
             
             labels = cat_summary.index.tolist()

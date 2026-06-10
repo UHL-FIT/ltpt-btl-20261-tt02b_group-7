@@ -21,6 +21,7 @@ from views.dashboard.dashboard_window import DashboardWindow
 from views.transactions.transaction_dialog import TransactionWindow
 from views.transactions.filter_dialog import FilterWindow
 from views.categories.category_manager_dialog import CategoryManagerWindow
+from views.common.help_dialog import HelpWindow
 
 # Nhập tiện ích ghi nhật ký log hệ thống
 from views.core.ui_decorators import safe_execution
@@ -133,11 +134,11 @@ class MainWindow(ctk.CTk):
         self.grid_rowconfigure(3, weight=1)
         self.grid_columnconfigure(0, weight=1)
         
-        self.setup_topbar() # Khởi tạo thanh tiêu đề trên cùng (Header)
-        self.setup_summary_strip() # Khởi tạo dải thẻ tóm tắt tổng quan
-        self.setup_action_bar() # Khởi tạo thanh thao tác phụ với nút thêm giao dịch và bộ lọc
-        self.setup_main_table() # Khởi tạo bảng hiển thị danh sách giao dịch chính
-        self.setup_bottom_bar() # Khởi tạo thanh trạng thái chân trang với thao tác hàng loạt và phân trang
+        self.setup_topbar()
+        self.setup_summary_strip()
+        self.setup_action_bar()
+        self.setup_main_table()
+        self.setup_bottom_bar()
 
     # Tập trung tiêu điểm con trỏ vào cửa sổ nếu cửa sổ đó đang mở
     def _focus_if_exists(self, window_attr):
@@ -225,7 +226,7 @@ class MainWindow(ctk.CTk):
         
         # Nút lọc thời gian nhanh "Xem theo"
         self.btn_view_by = ctk.CTkButton(
-            self.action_bar, text="Xem theo: Tất cả", image=self.icons.get('calendar'), 
+            self.action_bar, text="Xem theo: Tất cả", image=self.icons.get('calendar'),  
             fg_color=PANEL_BG, hover_color=PANEL_BG_HOVER, font=FONT_BUTTON, 
             corner_radius=16, height=36, border_width=1, border_color=BORDER_COLOR, 
             command=self.toggle_view_by_dropdown
@@ -723,12 +724,9 @@ class MainWindow(ctk.CTk):
     # Hiển thị popup hướng dẫn sử dụng và kích hoạt mở tệp tài liệu PDF
     @safe_execution("Lỗi mở tài liệu hướng dẫn")
     def show_help(self):
-        """Mở trực tiếp tệp tài liệu hướng dẫn sử dụng PDF."""
-        pdf_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'huong_dan_su_dung.pdf')
-        try:
-            os.startfile(os.path.abspath(pdf_path))
-        except Exception as e:
-            self.show_error("Lỗi", f"Không thể mở file PDF: {str(e)}")
+        """Mở cửa sổ hướng dẫn sử dụng tài liệu."""
+        if self._focus_if_exists('help_window'): return
+        self.help_window = HelpWindow(self, self.icons)
 
 
     # Kích hoạt hộp thoại chọn file CSV và chuyển tiếp cho controller nạp dữ liệu
