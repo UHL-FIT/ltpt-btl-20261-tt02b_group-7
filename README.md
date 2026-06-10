@@ -1,90 +1,173 @@
-# 📊 Quản Lý Chi Tiêu Cá Nhân (Personal Finance Manager) - FINAL VERSION
+<h1 align="center">QUẢN LÝ CHI TIÊU CÁ NHÂN</h1>
 
-Chào mừng bạn đến với ứng dụng **Quản Lý Chi Tiêu Cá Nhân (Bản Hoàn Thiện)**. 
-Đây là một dự án ứng dụng Desktop chuyên nghiệp được xây dựng bằng Python, giao diện đồ họa **CustomTkinter** siêu hiện đại và cơ sở dữ liệu **SQLite** gọn nhẹ. 
-
-Hệ thống được thiết kế theo tiêu chuẩn công nghiệp với kiến trúc **MVC (Model - View - Controller)** kết hợp **Service Layer**, phân tách cực kỳ khoa học giữa logic xử lý tính toán, luồng dữ liệu giao diện và lớp lưu trữ.
-
----
-
-## 🌟 TÍNH NĂNG NỔI BẬT
-
-- 💸 **Quản lý thu chi siêu tốc:** Thêm, Sửa, Xóa, Nhân bản giao dịch cực nhanh.
-- 📈 **Bảng điều khiển (Dashboard) phân tích thông minh:** Trực quan hóa dữ liệu bằng các biểu đồ Pie Chart (cơ cấu) và Line Chart (xu hướng) thông qua thư viện Matplotlib.
-- 🎯 **Quản lý Ngân sách & Tiết kiệm:** Theo dõi hạn mức chi tiêu mỗi tháng, cảnh báo vượt hạn mức (Vàng/Đỏ) và theo dõi tiến độ tích lũy cá nhân.
-- 📂 **Xử lý CSV mạnh mẽ:** Hỗ trợ Import/Export file CSV với số lượng lớn (thử nghiệm trên 1000+ dòng). Cơ chế tự động dọn dẹp dữ liệu, tự động phân tích mọi định dạng ngày tháng mà không sợ lỗi nhờ sức mạnh của Pandas.
-- 🎨 **Giao diện "Dark Mode" Premium:** Thiết kế tối màu hiện đại, sang trọng, hiệu ứng di chuột (hover) mượt mà, thông báo nổi (Toast Notification) thời thượng.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white" alt="Python Version" />
+  <img src="https://img.shields.io/badge/UI-CustomTkinter-orange?style=flat" alt="UI Kit" />
+  <img src="https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite&logoColor=white" alt="Database" />
+  <img src="https://img.shields.io/badge/Engine-Pandas-150458?logo=pandas&logoColor=white" alt="Data Engine" />
+  <img src="https://img.shields.io/badge/Charts-Matplotlib-11557c?style=flat" alt="Charts" />
+  <img src="https://img.shields.io/badge/Architecture-MVC%20%2B%20Services-green?style=flat" alt="Architecture" />
+</p>
 
 ---
 
-## 📁 CẤU TRÚC DỰ ÁN 
+## 📖 MỤC LỤC
 
-Dự án được phân rã thành các gói chuyên biệt để tối ưu hóa việc nâng cấp và bảo trì:
+1. [Giới Thiệu Chung](#-giới-thiệu-chung)
+2. [Tính Năng Nổi Bật](#-tính-năng-nổi-bật)
+3. [Kiến Trúc Hệ Thống (MVC)](#-kiến-trúc-hệ-thống-mvc)
+4. [Cấu Trúc Thư Mục Dự Án](#-cấu-trúc-thư-mục-dự-án)
+5. [Hướng Dẫn Cài Đặt & Khởi Chạy](#-hướng-dẫn-cài-đặt--khởi-chạy)
+6. [Mẹo & Phím Tắt Sử Dụng](#-mẹo--phím-tắt-sử-dụng)
+7. [Tài Liệu Đi Kèm](#-tài-liệu-đi-kèm)
+8. [Thông Tin Phát Triển](#-thông-tin-phát-triển)
+
+---
+
+## 🌟 GIỚI THIỆU CHUNG
+
+**Quản Lý Chi Tiêu Cá Nhân** là ứng dụng desktop chuyên nghiệp hỗ trợ theo dõi tài chính cá nhân một cách trực quan, tối ưu và bảo mật. Dự án được phát triển bằng ngôn ngữ **Python**, kết hợp cùng thư viện giao diện hiện đại **CustomTkinter** mang lại trải nghiệm dark-mode sang trọng và thư viện **Matplotlib / Pandas** để xử lý, phân tích số liệu tài chính chuyên sâu.
+
+Hệ thống được thiết kế theo tiêu chuẩn công nghiệp với kiến trúc **MVC (Model - View - Controller)** kết hợp **Service Layer**, giúp mã nguồn có độ độc lập cao, dễ dàng kiểm thử, bảo trì và mở rộng.
+
+---
+
+## ✨ TÍNH NĂNG NỔI BẬT
+
+- 💸 Quản lý thu chi: Hỗ trợ thêm, chỉnh sửa, xóa và sao chép giao dịch nhanh chóng, giúp việc nhập liệu trở nên thuận tiện hơn.
+- 📊 Thống kê và phân tích tài chính: Cung cấp các biểu đồ trực quan về tình hình thu chi, cơ cấu chi tiêu và xu hướng tài chính theo thời gian thông qua Matplotlib.
+- 🎯 Quản lý ngân sách và mục tiêu tiết kiệm: Cho phép thiết lập hạn mức chi tiêu theo tháng, theo dõi tiến độ tiết kiệm và đưa ra cảnh báo khi chi tiêu vượt ngưỡng đã đặt.
+- 📂 Nhập xuất dữ liệu CSV: Hỗ trợ import/export dữ liệu bằng Pandas, đồng thời tự động xử lý một số vấn đề thường gặp như ký tự BOM, dòng trống, khoảng trắng dư thừa, nhiều định dạng ngày tháng và dữ liệu số không hợp lệ.
+- 🎨 Giao diện trực quan: Thiết kế hiện đại với bố cục rõ ràng, hỗ trợ hiệu ứng tương tác và hệ thống thông báo giúp người dùng dễ dàng theo dõi các thao tác trên ứng dụng.
+- ⚡ Xử lý bất đồng bộ: Các tác vụ nặng như đọc tệp CSV lớn được thực hiện trên luồng nền nhằm đảm bảo giao diện luôn phản hồi ổn định trong quá trình sử dụng.
+- 📝 Quản lý danh mục: Cho phép người dùng tự do tạo, chỉnh sửa, xóa và sắp xếp các danh mục thu chi theo nhu cầu cá nhân.
+
+---
+
+## 🏛️ KIẾN TRÚC HỆ THỐNG (MVC)
+
+Ứng dụng tuân thủ nghiêm ngặt mô hình thiết kế **Model - View - Controller** mở rộng bằng cách tích hợp thêm **Service Layer** để xử lý logic nghiệp vụ và tương tác với lớp dữ liệu.
+
+```mermaid
+graph TD
+    User([Người Dùng]) <-->|Tương tác & Xem| View[views/ - Giao diện CustomTkinter]
+    View <-->|Truyền sự kiện / Nhận cập nhật| Controller[controllers/ - Điều phối viên & Multi-threading]
+    Controller <-->|Yêu cầu nghiệp vụ| Service[services/ - Tầng Nghiệp Vụ & Pandas]
+    Service <-->|Truy vấn SQL / Nạp Pandas| Model[(data/ & models/ - Cơ sở dữ liệu SQLite)]
+
+    style User fill:#d4ebf2,stroke:#333,stroke-width:2px
+    style View fill:#f9f7e8,stroke:#333,stroke-width:2px
+    style Controller fill:#ffe6eb,stroke:#333,stroke-width:2px
+    style Service fill:#eafaf1,stroke:#333,stroke-width:2px
+    style Model fill:#ece5f7,stroke:#333,stroke-width:2px
+```
+
+_Để tìm hiểu chi tiết hơn về luồng dữ liệu của hệ thống, vui lòng tham khảo tài liệu sơ đồ kiến trúc tại [SYS_MAP.md](SYS_MAP.md)._
+
+---
+
+## 📁 CẤU TRÚC THƯ MỤC DỰ ÁN
+
+Mã nguồn được phân tách một cách khoa học thành các thư mục chuyên biệt:
 
 ```text
 finance_manager/
-├── main.py                          # Entry point khởi chạy toàn bộ ứng dụng
-├── generate_data.py                 # Kịch bản sinh ngẫu nhiên 1000 dòng dữ liệu mẫu
-├── requirements.txt                 # Khai báo các thư viện phụ thuộc
-├── README.md                        # Hướng dẫn tổng quan dự án
-├── UPDATE.md                        # Chi tiết các bản cập nhật & vá lỗi so với bản cũ
-├── SYS_MAP.md                       # Sơ đồ biểu diễn luồng MVC của hệ thống
+├── main.py                      # File entry-point khởi chạy toàn bộ ứng dụng
+├── requirements.txt             # Định nghĩa danh sách thư viện phụ thuộc
+├── README.md                    # Tài liệu hướng dẫn sử dụng & cài đặt chính
+├── UPDATE.md                    # Nhật ký cập nhật tính năng & sửa lỗi
+├── SYS_MAP.md                   # Sơ đồ thiết kế và luồng MVC chi tiết
+├── huong_dan_su_dung.pdf        # Tài liệu hướng dẫn người dùng cuối
 │
-├── data/finance.db                  # [MODEL] Cơ sở dữ liệu SQLite cục bộ
-├── models/database.py               # [MODEL] Định nghĩa cấu trúc các bảng và khởi tạo DB
+├── data/
+│   └── finance.db               # Cơ sở dữ liệu SQLite lưu trữ dữ liệu thực tế
 │
-├── services/finance_service.py      # [SERVICE] Tầng nghiệp vụ: Tương tác SQL, xử lý Pandas, tính toán biểu đồ
+├── models/
+│   └── database.py              # Định nghĩa lược đồ (Schema) và khởi tạo bảng dữ liệu
 │
-├── controllers/main_controller.py   # [CONTROLLER] Điều phối viên xử lý tín hiệu và Multi-threading
+├── services/
+│   └── finance_service.py       # Tầng nghiệp vụ: Tương tác SQL, xử lý Pandas, tính toán biểu đồ
 │
-└── views/                           # [VIEW] Tầng giao diện người dùng (Được chia nhỏ thành Module)
-    ├── core/                        # Window gốc, Thanh điều hướng (Header), Theme Styles
-    ├── dashboard/                   # Cửa sổ hiển thị biểu đồ Matplotlib, Ngân sách, Cảnh báo
-    ├── transactions/                # Bảng lưới (Table), Form thêm/sửa, Dropdown lọc theo thời gian
-    ├── categories/                  # Quản lý danh sách các hạng mục thu/chi
-    └── common/                      # Thẻ thống kê (Cards), Thanh tải (Loading), Thông báo Toast
+├── controllers/
+│   └── main_controller.py      # Bộ điều phối sự kiện giữa View và Service, quản lý đa luồng (Multi-threading)
+│
+├── views/                       # Tầng giao diện người dùng
+│   ├── core/                    # Cửa sổ chính (MainWindow), Header, Theme Styles
+│   ├── dashboard/               # Tab hiển thị biểu đồ phân tích, Quản lý ngân sách & Tiết kiệm
+│   ├── transactions/            # Bảng hiển thị giao dịch (Table), Dialog thêm/sửa, Bộ lọc thời gian
+│   ├── categories/              # Quản lý danh mục thu/chi
+│   └── common/                  # Thẻ thống kê (Cards), Loading spinner, Thông báo Toast
+│
+└── utils/
+    └── logger.py                # Công cụ ghi logs hệ thống (System logs)
 ```
 
 ---
 
-## 📚 TÀI LIỆU MỞ RỘNG
-Vui lòng tham khảo các tệp tin đính kèm để hiểu rõ hơn về hệ thống:
-1. **[UPDATE.md](UPDATE.md):** Đọc để biết ứng dụng đã cải tiến Engine xử lý Pandas và thay đổi góc nhìn (Default View) như thế nào.
-2. **[SYS_MAP.md](SYS_MAP.md):** Đọc để xem Sơ đồ Kiến trúc Hệ thống chuẩn MVC của dự án này hoạt động ra sao.
-3. **huong_dan_su_dung.pdf:** Cẩm nang cho người dùng cuối.
+## 💻 HƯỚNG DẪN CÀI ĐẶT & KHỞI CHẠY
+
+### 1. Yêu cầu hệ thống
+
+- Yêu cầu máy tính cài đặt sẵn **Python 3.9** trở lên.
+
+### 2. Cài đặt môi trường ảo và thư viện
+
+Mở Terminal / Command Prompt tại thư mục dự án và thực hiện tuần tự các lệnh sau:
+
+- **Tạo môi trường ảo (Virtual Environment):**
+  ```bash
+  python -m venv venv
+  ```
+- **Kích hoạt môi trường ảo:**
+  - Trên Windows:
+    ```powershell
+    .\venv\Scripts\activate
+    ```
+  - Trên macOS/Linux:
+    ```bash
+    source venv/bin/activate
+    ```
+- **Cài đặt các thư viện phụ thuộc:**
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+### 3. Dữ liệu thử nghiệm và Khởi chạy ứng dụng
+
+- Dự án đã chuẩn bị sẵn hai bộ dữ liệu mẫu định dạng CSV để người dùng dễ dàng kiểm thử hiệu năng và bộ lọc:
+  - `transactions_100.csv` (100 dòng dữ liệu mẫu)
+  - `transactions_1000.csv` (1000 dòng dữ liệu mẫu)
+
+  _(Bạn có thể sử dụng nút **"Nhập CSV"** ngay trên giao diện ứng dụng để nạp các file này)._
+
+- **Lệnh khởi chạy ứng dụng:**
+  ```bash
+  python main.py
+  ```
 
 ---
 
-## 💻 HƯỚNG DẪN CÀI ĐẶT & CHẠY ỨNG DỤNG
+## 💡 MẸO & PHÍM TẮT SỬ DỤNG
 
-### 1. Yêu cầu hệ thống:
-Đảm bảo bạn đã cài đặt Python 3.9 trở lên.
-
-### 2. Cài đặt môi trường ảo và thư viện:
-Bật Terminal / Command Prompt và gõ lệnh:
-```bash
-python -m venv venv
-.\venv\Scripts\activate      # Dành cho Windows
-pip install -r requirements.txt
-```
-
-### 3. Tạo dữ liệu mẫu và Chạy App:
-Bạn có thể tự sinh ra 1 file dữ liệu mẫu gồm 1000 dòng cực kỳ chân thực thông qua tệp đính kèm:
-```bash
-python generate_data.py
-```
-*(File sinh ra có tên `transactions_1000.csv`. Sau khi mở App, bạn có thể dùng nút "Nhập CSV" để nạp file này vào Data).*
-
-Khởi chạy ứng dụng chính:
-```bash
-python main.py
-```
-
-### 💡 Mẹo sử dụng:
-- Sử dụng phím tắt `Ctrl + N` để mở nhanh bảng thêm giao dịch.
-- Quét chọn nhiều dòng trên lưới (hoặc ô Checkbox chọn tất cả) và bấm `<Delete>` để xoá nhanh.
-- Nút "Xem theo" mặc định hiển thị "Tất cả" dữ liệu, bạn có thể click vào để chọn lọc theo từng tuần/tháng cụ thể.
+- ⌨️ **Mở nhanh Form thêm giao dịch:** Sử dụng tổ hợp phím nóng `Ctrl + N`.
+- 🔍 **Tìm kiếm nhanh:** Sử dụng tổ hợp phím nóng `Ctrl + F` để di chuyển con trỏ chuột tập trung vào thanh tìm kiếm.
+- 🗑️ **Xóa nhanh giao dịch:** Bạn có thể quét chọn một hoặc nhiều dòng trên bảng dữ liệu (hoặc tích chọn checkbox trên tiêu đề đầu bảng) và nhấn phím `Delete` trên bàn phím.
+- 🔄 **Đặt lại bộ lọc nhanh:** Nhấn nút **Đặt lại** để đưa tất cả các bộ lọc thời gian và tìm kiếm về trạng thái mặc định (Hiển thị tất cả dòng dữ liệu thay vì giới hạn theo ngày).
 
 ---
-**Tác giả:** Nguyễn Trung Hiếu
-**Đề tài:** Quản Lý Chi Tiêu Cá Nhân Bằng Python & Tkinter
+
+## 📚 TÀI LIỆU ĐI KÈM
+
+Để nắm bắt trọn vẹn cách thức hoạt động và quá trình tối ưu ứng dụng, bạn nên đọc thêm:
+
+1. **[SYS_MAP.md](SYS_MAP.md):** Giải thích chi tiết cấu trúc MVC, cách phân chia trách nhiệm giữa các Layer và sơ đồ luồng dữ liệu ví dụ.
+2. **[UPDATE.md](UPDATE.md):** Xem nhật ký nâng cấp, giải pháp tối ưu hóa bộ lọc thời gian và kỹ thuật Pandas khử lỗi import file CSV.
+3. **[huong_dan_su_dung.pdf](huong_dan_su_dung.pdf):** Tài liệu hướng dẫn sử dụng trực quan bằng tiếng Việt.
+
+---
+
+## 👥 THÔNG TIN PHÁT TRIỂN
+
+- **Đề tài:** Ứng Dụng Quản Lý Chi Tiêu Cá Nhân Bằng Python & CustomTkinter
+- **Tác giả:** Nguyễn Trung Hiếu
+- **Nhóm thực hiện:** Nhóm 7 (Lớp LTPT_CNTTK2B)
