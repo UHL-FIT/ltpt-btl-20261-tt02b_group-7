@@ -26,9 +26,9 @@
 
 ## 🌟 GIỚI THIỆU CHUNG
 
-**Quản Lý Chi Tiêu Cá Nhân** là ứng dụng desktop chuyên nghiệp hỗ trợ theo dõi tài chính cá nhân một cách trực quan, tối ưu và bảo mật. Dự án được phát triển bằng ngôn ngữ **Python**, kết hợp cùng thư viện giao diện hiện đại **CustomTkinter** mang lại trải nghiệm dark-mode sang trọng và thư viện **Matplotlib / Pandas** để xử lý, phân tích số liệu tài chính chuyên sâu.
+**Quản Lý Chi Tiêu Cá Nhân** là ứng dụng desktop được phát triển bằng **Python**, hỗ trợ quản lý thu chi, theo dõi ngân sách và phân tích tình hình tài chính cá nhân. Ứng dụng sử dụng **CustomTkinter** để xây dựng giao diện, kết hợp **Pandas** và **Matplotlib** để xử lý và trực quan hóa dữ liệu.
 
-Hệ thống được thiết kế theo tiêu chuẩn công nghiệp với kiến trúc **MVC (Model - View - Controller)** kết hợp **Service Layer**, giúp mã nguồn có độ độc lập cao, dễ dàng kiểm thử, bảo trì và mở rộng.
+Hệ thống được thiết kế theo kiến trúc **MVC (Model - View - Controller)** kết hợp **Service Layer**, giúp mã nguồn dễ bảo trì, kiểm thử và mở rộng.
 
 ---
 
