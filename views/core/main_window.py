@@ -21,7 +21,6 @@ from views.dashboard.dashboard_window import DashboardWindow
 from views.transactions.transaction_dialog import TransactionWindow
 from views.transactions.filter_dialog import FilterWindow
 from views.categories.category_manager_dialog import CategoryManagerWindow
-from views.common.help_dialog import HelpWindow
 
 # Nhập tiện ích ghi nhật ký log hệ thống
 from views.core.ui_decorators import safe_execution
@@ -57,7 +56,6 @@ class MainWindow(ctk.CTk):
         # Thuộc tính quản lý cửa sổ con
         self.controller = None
         self.dashboard_window = None
-        self.help_window = None
         self.loading_window = None
         self.calendar_window = None
         self.transaction_window = None
@@ -721,12 +719,24 @@ class MainWindow(ctk.CTk):
         if self.dashboard_window and self.dashboard_window.winfo_exists():
             self.dashboard_window.update_charts(category_data, trend_data)
 
-    # Hiển thị popup hướng dẫn sử dụng và kích hoạt mở tệp tài liệu PDF
+    # Mở trực tiếp tài liệu hướng dẫn sử dụng PDF
     @safe_execution("Lỗi mở tài liệu hướng dẫn")
     def show_help(self):
-        """Mở cửa sổ hướng dẫn sử dụng tài liệu."""
-        if self._focus_if_exists('help_window'): return
-        self.help_window = HelpWindow(self, self.icons)
+        """Mở trực tiếp tệp tin PDF hướng dẫn sử dụng trên máy tính."""
+        pdf_path = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+            'huong_dan_su_dung.pdf'
+        )
+        if not os.path.exists(pdf_path):
+            self.show_error("Lỗi", "Không tìm thấy file tài liệu huong_dan_su_dung.pdf ở thư mục gốc.")
+            return
+        
+        try:
+            os.startfile(os.path.abspath(pdf_path))
+            logger.info("Đã mở trực tiếp file PDF hướng dẫn sử dụng.")
+        except Exception as e:
+            self.show_error("Lỗi", f"Không thể mở file PDF: {str(e)}")
+            logger.error(f"Lỗi mở tài liệu hướng dẫn PDF: {str(e)}", exc_info=True)
 
 
     # Kích hoạt hộp thoại chọn file CSV và chuyển tiếp cho controller nạp dữ liệu

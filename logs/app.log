@@ -1,676 +1,692 @@
-2026-06-10 08:19:07,323 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-01')
-2026-06-10 08:19:07,324 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-01')
-2026-06-10 08:19:07,324 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:07,324 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:07,324 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:07,324 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:19:07,327 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-01')
-2026-06-10 08:19:07,328 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:07,328 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:07,328 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:07,328 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2629000.0, 'Giáo dục': 5498000.0, 'Giải trí': 5350000.0, 'Khác': 7878000.0, 'Mua sắm': 23619000.0, 'Sức khỏe': 2813000.0, 'Tiền thuê': 12831000.0, 'Ăn uống': 11142000.0}
-2026-06-10 08:19:07,328 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-01 thành công. Số danh mục: 0
-2026-06-10 08:19:07,331 [DEBUG] [main_controller.py:get_categories:247] - Gọi get_categories() từ View.
-2026-06-10 08:19:07,332 [DEBUG] [finance_service.py:get_categories:22] - Gọi get_categories()
-2026-06-10 08:19:07,332 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:07,332 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:07,332 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:07,332 [DEBUG] [finance_service.py:get_categories:29] - Kết quả get_categories(): Lấy ra 6 danh mục.
-2026-06-10 08:19:07,349 [DEBUG] [finance_service.py:get_budget:360] - Gọi get_budget(category='Ăn uống', month='2026-01')
-2026-06-10 08:19:07,349 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:07,349 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:07,350 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:07,350 [DEBUG] [finance_service.py:get_budget:370] - Kết quả get_budget(): Hạn mức=None
-2026-06-10 08:19:07,627 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:19:07,979 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-01
-2026-06-10 08:19:07,979 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-01')
-2026-06-10 08:19:07,979 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-01')
-2026-06-10 08:19:07,979 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:07,979 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:07,979 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:07,979 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:19:07,979 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-01')
-2026-06-10 08:19:07,980 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:07,980 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:07,980 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:07,980 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2629000.0, 'Giáo dục': 5498000.0, 'Giải trí': 5350000.0, 'Khác': 7878000.0, 'Mua sắm': 23619000.0, 'Sức khỏe': 2813000.0, 'Tiền thuê': 12831000.0, 'Ăn uống': 11142000.0}
-2026-06-10 08:19:07,980 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-01 thành công. Số danh mục: 0
-2026-06-10 08:19:07,983 [DEBUG] [main_controller.py:get_categories:247] - Gọi get_categories() từ View.
-2026-06-10 08:19:07,983 [DEBUG] [finance_service.py:get_categories:22] - Gọi get_categories()
-2026-06-10 08:19:07,983 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:07,984 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:07,984 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:07,984 [DEBUG] [finance_service.py:get_categories:29] - Kết quả get_categories(): Lấy ra 6 danh mục.
-2026-06-10 08:19:08,001 [DEBUG] [finance_service.py:get_budget:360] - Gọi get_budget(category='Ăn uống', month='2026-01')
-2026-06-10 08:19:08,001 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:08,001 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:08,001 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:08,001 [DEBUG] [finance_service.py:get_budget:370] - Kết quả get_budget(): Hạn mức=None
-2026-06-10 08:19:08,102 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:19:08,102 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:19:08,102 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:08,103 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:08,106 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:08,107 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:19:08,111 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:19:08,111 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:19:08,111 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:19:08,111 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:08,111 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:08,117 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:08,118 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:19:08,121 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:19:08,123 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:19:08,356 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: 2026-01
-2026-06-10 08:19:08,366 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:19:08,366 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:08,367 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:08,369 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:08,370 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:19:08,390 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-01
-2026-06-10 08:19:08,390 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-01')
-2026-06-10 08:19:08,390 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-01')
-2026-06-10 08:19:08,390 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:08,391 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:08,391 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:08,391 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:19:08,391 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-01')
-2026-06-10 08:19:08,391 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:08,391 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:08,392 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:08,392 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2629000.0, 'Giáo dục': 5498000.0, 'Giải trí': 5350000.0, 'Khác': 7878000.0, 'Mua sắm': 23619000.0, 'Sức khỏe': 2813000.0, 'Tiền thuê': 12831000.0, 'Ăn uống': 11142000.0}
-2026-06-10 08:19:08,392 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-01 thành công. Số danh mục: 0
-2026-06-10 08:19:09,156 [DEBUG] [main_controller.py:check_alerts:338] - Kiểm tra cảnh báo hạn mức: month='2026-01', category=None
-2026-06-10 08:19:09,156 [DEBUG] [finance_service.py:check_alerts:513] - Gọi check_alerts(month='2026-01', category=None)
-2026-06-10 08:19:09,156 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-01')
-2026-06-10 08:19:09,156 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-01')
-2026-06-10 08:19:09,156 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:09,157 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:09,157 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:09,157 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:19:09,157 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-01')
-2026-06-10 08:19:09,157 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:09,157 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:09,158 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:09,158 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2629000.0, 'Giáo dục': 5498000.0, 'Giải trí': 5350000.0, 'Khác': 7878000.0, 'Mua sắm': 23619000.0, 'Sức khỏe': 2813000.0, 'Tiền thuê': 12831000.0, 'Ăn uống': 11142000.0}
-2026-06-10 08:19:09,158 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-01 thành công. Số danh mục: 0
-2026-06-10 08:19:09,158 [DEBUG] [finance_service.py:check_alerts:522] - Kết quả check_alerts(): Có 0 cảnh báo vượt/sắp vượt hạn mức.
-2026-06-10 08:19:09,169 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-01
-2026-06-10 08:19:09,169 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-01')
-2026-06-10 08:19:09,169 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-01')
-2026-06-10 08:19:09,169 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:09,169 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:09,170 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:09,170 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:19:09,170 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-01')
-2026-06-10 08:19:09,170 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:09,170 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:09,170 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:09,170 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2629000.0, 'Giáo dục': 5498000.0, 'Giải trí': 5350000.0, 'Khác': 7878000.0, 'Mua sắm': 23619000.0, 'Sức khỏe': 2813000.0, 'Tiền thuê': 12831000.0, 'Ăn uống': 11142000.0}
-2026-06-10 08:19:09,170 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-01 thành công. Số danh mục: 0
-2026-06-10 08:19:09,201 [DEBUG] [main_controller.py:check_alerts:338] - Kiểm tra cảnh báo hạn mức: month='2026-01', category=None
-2026-06-10 08:19:09,201 [DEBUG] [finance_service.py:check_alerts:513] - Gọi check_alerts(month='2026-01', category=None)
-2026-06-10 08:19:09,201 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-01')
-2026-06-10 08:19:09,201 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-01')
-2026-06-10 08:19:09,201 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:09,201 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:09,201 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:09,201 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:19:09,202 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-01')
-2026-06-10 08:19:09,202 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:09,202 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:09,202 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:09,202 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2629000.0, 'Giáo dục': 5498000.0, 'Giải trí': 5350000.0, 'Khác': 7878000.0, 'Mua sắm': 23619000.0, 'Sức khỏe': 2813000.0, 'Tiền thuê': 12831000.0, 'Ăn uống': 11142000.0}
-2026-06-10 08:19:09,202 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-01 thành công. Số danh mục: 0
-2026-06-10 08:19:09,202 [DEBUG] [finance_service.py:check_alerts:522] - Kết quả check_alerts(): Có 0 cảnh báo vượt/sắp vượt hạn mức.
-2026-06-10 08:19:09,214 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-01
-2026-06-10 08:19:09,214 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-01')
-2026-06-10 08:19:09,214 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-01')
-2026-06-10 08:19:09,214 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:09,215 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:09,215 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:09,215 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:19:09,215 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-01')
-2026-06-10 08:19:09,215 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:19:09,215 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:19:09,216 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:19:09,216 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2629000.0, 'Giáo dục': 5498000.0, 'Giải trí': 5350000.0, 'Khác': 7878000.0, 'Mua sắm': 23619000.0, 'Sức khỏe': 2813000.0, 'Tiền thuê': 12831000.0, 'Ăn uống': 11142000.0}
-2026-06-10 08:19:09,216 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-01 thành công. Số danh mục: 0
-2026-06-10 08:19:11,113 [INFO] [dashboard_window.py:_on_window_destroy:162] - Giải phóng tài nguyên biểu đồ của DashboardWindow và các Tabs con
-2026-06-10 08:19:11,113 [INFO] [stats_tab.py:cleanup:573] - Giải phóng tài nguyên biểu đồ của StatsTab
-2026-06-10 08:19:11,113 [INFO] [budget_tab.py:cleanup:498] - Giải phóng tài nguyên biểu đồ của BudgetTab
-2026-06-10 08:19:11,114 [INFO] [alerts_tab.py:cleanup:229] - Giải phóng tài nguyên biểu đồ của AlertsTab
-2026-06-10 08:19:11,115 [INFO] [savings_tab.py:cleanup:338] - Giải phóng tài nguyên biểu đồ của SavingsTab
-2026-06-10 08:23:04,244 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:23:04,245 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:23:04,245 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:23:04,249 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:23:04,251 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:23:04,480 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:23:05,398 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:23:05,398 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:23:05,398 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:23:05,399 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:23:05,403 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:23:05,405 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:23:05,411 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:23:05,411 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:23:05,411 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:23:05,411 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:23:05,412 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:23:05,417 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:23:05,419 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:23:05,423 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:23:05,432 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:23:05,798 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: None
-2026-06-10 08:23:05,806 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:23:05,806 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:23:05,806 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:23:05,809 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:23:05,811 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:23:09,484 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:23:09,862 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:23:09,862 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:23:09,862 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:23:09,862 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:23:09,866 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:23:09,867 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:23:09,869 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:23:09,870 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:23:09,870 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:23:09,870 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:23:09,870 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:23:09,874 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:23:09,875 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:23:09,878 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:23:09,890 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:23:10,124 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: 2026-04
-2026-06-10 08:23:10,133 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:23:10,133 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:23:10,134 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:23:10,136 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:23:10,137 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:23:10,159 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-04
-2026-06-10 08:23:10,159 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-04')
-2026-06-10 08:23:10,159 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-04')
-2026-06-10 08:23:10,159 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:23:10,159 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:23:10,159 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:23:10,159 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:23:10,159 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-04')
-2026-06-10 08:23:10,160 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:23:10,160 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:23:10,160 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:23:10,160 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2681000.0, 'Giáo dục': 7913000.0, 'Giải trí': 6540000.0, 'Khác': 8403000.0, 'Mua sắm': 41993000.0, 'Sức khỏe': 4725000.0, 'Tiền thuê': 12416000.0, 'Ăn uống': 11810000.0}
-2026-06-10 08:23:10,160 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-04 thành công. Số danh mục: 0
-2026-06-10 08:23:11,006 [INFO] [dashboard_window.py:_on_window_destroy:162] - Giải phóng tài nguyên biểu đồ của DashboardWindow và các Tabs con
-2026-06-10 08:23:11,006 [INFO] [stats_tab.py:cleanup:573] - Giải phóng tài nguyên biểu đồ của StatsTab
-2026-06-10 08:23:11,006 [INFO] [budget_tab.py:cleanup:498] - Giải phóng tài nguyên biểu đồ của BudgetTab
-2026-06-10 08:23:11,006 [INFO] [alerts_tab.py:cleanup:229] - Giải phóng tài nguyên biểu đồ của AlertsTab
-2026-06-10 08:23:11,007 [INFO] [savings_tab.py:cleanup:338] - Giải phóng tài nguyên biểu đồ của SavingsTab
-2026-06-10 08:23:11,403 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_dashboard: can't invoke "bind" command: application has been destroyed
+2026-06-10 10:49:01,513 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
 Traceback (most recent call last):
   File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
     return func(*args, **kwargs)
-  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 713, in show_dashboard
-    self.dashboard_window = DashboardWindow(self, self.controller, initial_tab="stats")
-                            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\dashboard\dashboard_window.py", line 21, in __init__
-    super().__init__(master, **kwargs)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 84, in __init__
-    self.bind('<Configure>', self._update_dimensions_event)
-    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1545, in bind
-    return self._bind(('bind', self._w), sequence, func, add)
-           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1499, in _bind
-    self.tk.call(what + (sequence, cmd))
-    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-_tkinter.TclError: can't invoke "bind" command: application has been destroyed
-2026-06-10 08:23:11,440 [INFO] [main.py:main:55] - Ứng dụng kết thúc bình thường.
-2026-06-10 08:29:41,186 [INFO] [main.py:main:25] - =========================================
-2026-06-10 08:29:41,186 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
-2026-06-10 08:29:41,187 [INFO] [main.py:main:27] - =========================================
-2026-06-10 08:29:41,187 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
-2026-06-10 08:29:41,187 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
-2026-06-10 08:29:41,187 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:41,188 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:41,188 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
-2026-06-10 08:29:41,189 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
-2026-06-10 08:29:41,189 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
-2026-06-10 08:29:41,189 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
-2026-06-10 08:29:41,189 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
-2026-06-10 08:29:41,189 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
-2026-06-10 08:29:41,190 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
-2026-06-10 08:29:41,190 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
-2026-06-10 08:29:41,190 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
-2026-06-10 08:29:41,463 [INFO] [main_window.py:__init__:96] - MainWindow initialized and UI components rendered.
-2026-06-10 08:29:41,463 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
-2026-06-10 08:29:41,463 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
-2026-06-10 08:29:41,463 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
-2026-06-10 08:29:41,463 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
-2026-06-10 08:29:41,463 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
-2026-06-10 08:29:41,464 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:41,464 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:41,466 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:41,467 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1000 bản ghi.
-2026-06-10 08:29:41,473 [INFO] [main_window.py:apply_filters:328] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
-2026-06-10 08:29:41,498 [DEBUG] [main_window.py:task:357] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1000
-2026-06-10 08:29:41,503 [DEBUG] [main_window.py:task:408] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
-2026-06-10 08:29:41,507 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
-2026-06-10 08:29:41,507 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
-2026-06-10 08:29:41,507 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
-2026-06-10 08:29:41,857 [DEBUG] [main_window.py:task:425] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1000
-2026-06-10 08:29:42,100 [INFO] [main_window.py:_on_filter_success:442] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1000 bản ghi.
-2026-06-10 08:29:43,666 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:29:43,666 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:43,666 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:43,669 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:43,670 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:29:44,163 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:29:44,759 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:29:44,759 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:29:44,760 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:44,760 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:44,763 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:44,764 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:29:44,768 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:29:44,769 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:29:44,769 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:29:44,769 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:44,769 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:44,772 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:44,774 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:29:44,778 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:29:44,791 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:29:45,024 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: None
-2026-06-10 08:29:45,031 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:29:45,031 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:45,031 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:45,034 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:45,034 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:29:50,254 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:29:50,618 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:29:50,618 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:29:50,618 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:50,618 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:50,621 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:50,623 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:29:50,625 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:29:50,626 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:29:50,626 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:29:50,626 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:50,626 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:50,629 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:50,630 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:29:50,634 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:29:50,643 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:29:50,870 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: 2026-04
-2026-06-10 08:29:50,878 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:29:50,878 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:50,878 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:50,881 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:50,882 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:29:50,905 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-04
-2026-06-10 08:29:50,905 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-04')
-2026-06-10 08:29:50,905 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-04')
-2026-06-10 08:29:50,906 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:50,906 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:50,906 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:50,906 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:29:50,906 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-04')
-2026-06-10 08:29:50,906 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:29:50,906 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:29:50,907 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:29:50,907 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2681000.0, 'Giáo dục': 7913000.0, 'Giải trí': 6540000.0, 'Khác': 8403000.0, 'Mua sắm': 41993000.0, 'Sức khỏe': 4725000.0, 'Tiền thuê': 12416000.0, 'Ăn uống': 11810000.0}
-2026-06-10 08:29:50,907 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-04 thành công. Số danh mục: 0
-2026-06-10 08:29:52,946 [INFO] [dashboard_window.py:_on_window_destroy:162] - Giải phóng tài nguyên biểu đồ của DashboardWindow và các Tabs con
-2026-06-10 08:29:52,947 [INFO] [stats_tab.py:cleanup:573] - Giải phóng tài nguyên biểu đồ của StatsTab
-2026-06-10 08:29:52,947 [INFO] [budget_tab.py:cleanup:498] - Giải phóng tài nguyên biểu đồ của BudgetTab
-2026-06-10 08:29:52,948 [INFO] [alerts_tab.py:cleanup:229] - Giải phóng tài nguyên biểu đồ của AlertsTab
-2026-06-10 08:29:52,948 [INFO] [savings_tab.py:cleanup:338] - Giải phóng tài nguyên biểu đồ của SavingsTab
-2026-06-10 08:29:59,589 [INFO] [main.py:main:55] - Ứng dụng kết thúc bình thường.
-2026-06-10 08:35:16,281 [INFO] [main.py:main:25] - =========================================
-2026-06-10 08:35:16,281 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
-2026-06-10 08:35:16,282 [INFO] [main.py:main:27] - =========================================
-2026-06-10 08:35:16,282 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
-2026-06-10 08:35:16,283 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
-2026-06-10 08:35:16,283 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:16,284 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:16,284 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
-2026-06-10 08:35:16,284 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
-2026-06-10 08:35:16,284 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
-2026-06-10 08:35:16,284 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
-2026-06-10 08:35:16,284 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
-2026-06-10 08:35:16,285 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
-2026-06-10 08:35:16,285 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
-2026-06-10 08:35:16,285 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
-2026-06-10 08:35:16,285 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
-2026-06-10 08:35:16,552 [INFO] [main_window.py:__init__:96] - MainWindow initialized and UI components rendered.
-2026-06-10 08:35:16,553 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
-2026-06-10 08:35:16,553 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
-2026-06-10 08:35:16,553 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
-2026-06-10 08:35:16,553 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
-2026-06-10 08:35:16,553 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
-2026-06-10 08:35:16,553 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:16,553 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:16,556 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:16,556 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1000 bản ghi.
-2026-06-10 08:35:16,565 [INFO] [main_window.py:apply_filters:328] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
-2026-06-10 08:35:16,614 [DEBUG] [main_window.py:task:357] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1000
-2026-06-10 08:35:16,620 [DEBUG] [main_window.py:task:408] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
-2026-06-10 08:35:16,626 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
-2026-06-10 08:35:16,626 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
-2026-06-10 08:35:16,627 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
-2026-06-10 08:35:16,976 [DEBUG] [main_window.py:task:425] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1000
-2026-06-10 08:35:17,286 [INFO] [main_window.py:_on_filter_success:442] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1000 bản ghi.
-2026-06-10 08:35:19,236 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:35:19,236 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:19,236 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:19,239 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:19,241 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:35:19,824 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:35:20,489 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:35:20,489 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:35:20,489 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:20,489 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:20,492 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:20,494 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:35:20,498 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:35:20,498 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:35:20,498 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:35:20,499 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:20,499 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:20,502 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:20,505 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:35:20,509 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:35:20,521 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:35:20,786 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: None
-2026-06-10 08:35:20,793 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:35:20,793 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:20,793 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:20,795 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:20,796 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:35:22,373 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:35:22,900 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:35:22,900 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:35:22,901 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:22,901 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:22,908 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:22,909 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:35:22,912 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:35:22,912 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:35:22,912 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:35:22,912 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:22,912 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:22,915 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:22,916 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:35:22,920 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:35:22,933 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:35:23,224 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: 2026-04
-2026-06-10 08:35:23,232 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:35:23,232 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:23,233 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:23,235 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:23,236 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:35:23,271 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-04
-2026-06-10 08:35:23,271 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-04')
-2026-06-10 08:35:23,271 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-04')
-2026-06-10 08:35:23,271 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:23,271 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:23,272 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:23,272 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:35:23,272 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-04')
-2026-06-10 08:35:23,272 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:35:23,272 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:35:23,272 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:35:23,272 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2681000.0, 'Giáo dục': 7913000.0, 'Giải trí': 6540000.0, 'Khác': 8403000.0, 'Mua sắm': 41993000.0, 'Sức khỏe': 4725000.0, 'Tiền thuê': 12416000.0, 'Ăn uống': 11810000.0}
-2026-06-10 08:35:23,272 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-04 thành công. Số danh mục: 0
-2026-06-10 08:35:25,961 [INFO] [dashboard_window.py:_on_window_destroy:162] - Giải phóng tài nguyên biểu đồ của DashboardWindow và các Tabs con
-2026-06-10 08:35:25,962 [INFO] [stats_tab.py:cleanup:573] - Giải phóng tài nguyên biểu đồ của StatsTab
-2026-06-10 08:35:25,962 [INFO] [budget_tab.py:cleanup:498] - Giải phóng tài nguyên biểu đồ của BudgetTab
-2026-06-10 08:35:25,962 [INFO] [alerts_tab.py:cleanup:229] - Giải phóng tài nguyên biểu đồ của AlertsTab
-2026-06-10 08:35:25,962 [INFO] [savings_tab.py:cleanup:338] - Giải phóng tài nguyên biểu đồ của SavingsTab
-2026-06-10 08:37:47,126 [INFO] [main.py:main:25] - =========================================
-2026-06-10 08:37:47,126 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
-2026-06-10 08:37:47,127 [INFO] [main.py:main:27] - =========================================
-2026-06-10 08:37:47,127 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
-2026-06-10 08:37:47,127 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
-2026-06-10 08:37:47,127 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:47,128 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:47,128 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
-2026-06-10 08:37:47,128 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
-2026-06-10 08:37:47,128 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
-2026-06-10 08:37:47,128 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
-2026-06-10 08:37:47,128 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
-2026-06-10 08:37:47,128 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
-2026-06-10 08:37:47,128 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
-2026-06-10 08:37:47,128 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
-2026-06-10 08:37:47,129 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
-2026-06-10 08:37:47,403 [INFO] [main_window.py:__init__:97] - MainWindow initialized and UI components rendered.
-2026-06-10 08:37:47,403 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
-2026-06-10 08:37:47,403 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
-2026-06-10 08:37:47,403 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
-2026-06-10 08:37:47,403 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
-2026-06-10 08:37:47,403 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
-2026-06-10 08:37:47,404 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:47,404 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:47,406 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:47,406 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1000 bản ghi.
-2026-06-10 08:37:47,416 [INFO] [main_window.py:apply_filters:329] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
-2026-06-10 08:37:47,458 [DEBUG] [main_window.py:task:358] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1000
-2026-06-10 08:37:47,464 [DEBUG] [main_window.py:task:409] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
-2026-06-10 08:37:47,459 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
-2026-06-10 08:37:47,468 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
-2026-06-10 08:37:47,468 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
-2026-06-10 08:37:47,818 [DEBUG] [main_window.py:task:426] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1000
-2026-06-10 08:37:48,095 [INFO] [main_window.py:_on_filter_success:443] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1000 bản ghi.
-2026-06-10 08:37:49,786 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:49,786 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:49,786 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:49,790 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:49,792 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:50,339 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:37:51,201 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:37:51,201 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:51,201 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:51,201 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:51,204 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:51,206 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:51,210 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:37:51,211 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:37:51,211 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:51,211 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:51,212 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:51,215 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:51,217 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:51,222 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:37:51,240 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:37:51,563 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: None
-2026-06-10 08:37:51,570 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:51,570 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:51,570 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:51,573 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:51,574 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:55,169 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:37:55,624 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:37:55,624 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:55,625 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:55,625 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:55,627 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:55,630 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:55,633 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:37:55,634 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:37:55,634 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:55,634 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:55,635 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:55,639 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:55,642 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:55,646 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:37:55,656 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:37:55,902 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: 2026-04
-2026-06-10 08:37:55,911 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:55,911 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:55,911 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:55,913 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:55,914 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:55,945 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-04
-2026-06-10 08:37:55,945 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-04')
-2026-06-10 08:37:55,945 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-04')
-2026-06-10 08:37:55,945 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:55,945 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:55,945 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:55,945 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:37:55,946 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-04')
-2026-06-10 08:37:55,946 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:55,946 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:55,946 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:55,946 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2681000.0, 'Giáo dục': 7913000.0, 'Giải trí': 6540000.0, 'Khác': 8403000.0, 'Mua sắm': 41993000.0, 'Sức khỏe': 4725000.0, 'Tiền thuê': 12416000.0, 'Ăn uống': 11810000.0}
-2026-06-10 08:37:55,946 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-04 thành công. Số danh mục: 0
-2026-06-10 08:37:57,626 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:37:58,045 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:37:58,045 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:58,046 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:58,046 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:58,050 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:58,052 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:58,053 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:37:58,054 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:37:58,054 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:58,054 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:58,054 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:58,057 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:58,058 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:58,062 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:37:58,073 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:37:58,321 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: 2026-02
-2026-06-10 08:37:58,333 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:37:58,334 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:58,334 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:58,336 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:58,337 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:37:58,365 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-02
-2026-06-10 08:37:58,365 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-02')
-2026-06-10 08:37:58,365 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-02')
-2026-06-10 08:37:58,365 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:58,366 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:58,366 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:58,366 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:37:58,366 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-02')
-2026-06-10 08:37:58,366 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:37:58,366 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:37:58,367 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:37:58,367 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 1618000.0, 'Giáo dục': 9800000.0, 'Giải trí': 5316000.0, 'Khác': 7000000.0, 'Mua sắm': 19582000.0, 'Sức khỏe': 1814000.0, 'Tiền thuê': 5844000.0, 'Ăn uống': 11185000.0}
-2026-06-10 08:37:58,367 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-02 thành công. Số danh mục: 0
-2026-06-10 08:38:00,600 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:38:01,027 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:38:01,027 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:38:01,028 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:01,028 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:01,033 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:01,035 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:38:01,037 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:38:01,038 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:38:01,038 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:38:01,038 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:01,038 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:01,040 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:01,042 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:38:01,045 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:38:01,054 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:38:01,306 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: 2026-05
-2026-06-10 08:38:01,315 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:38:01,315 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:01,315 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:01,321 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:01,322 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:38:01,354 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-05
-2026-06-10 08:38:01,354 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-05')
-2026-06-10 08:38:01,354 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-05')
-2026-06-10 08:38:01,354 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:01,355 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:01,355 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:01,355 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:38:01,355 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-05')
-2026-06-10 08:38:01,355 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:01,355 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:01,356 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:01,356 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2024000.0, 'Giáo dục': 8617000.0, 'Giải trí': 3666000.0, 'Khác': 6971000.0, 'Mua sắm': 15782000.0, 'Sức khỏe': 4575000.0, 'Tiền thuê': 9387000.0, 'Ăn uống': 10435000.0}
-2026-06-10 08:38:01,356 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-05 thành công. Số danh mục: 0
-2026-06-10 08:38:03,273 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:38:03,697 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:38:03,697 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:38:03,697 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:03,697 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:03,702 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:03,704 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:38:03,706 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:38:03,707 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:38:03,707 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:38:03,707 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:03,707 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:03,711 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:03,713 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:38:03,715 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:38:03,724 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:38:04,002 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: 2026-01
-2026-06-10 08:38:04,011 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:38:04,011 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:04,012 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:04,015 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:04,016 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:38:04,039 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-01
-2026-06-10 08:38:04,040 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-01')
-2026-06-10 08:38:04,040 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-01')
-2026-06-10 08:38:04,040 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:04,040 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:04,040 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:04,040 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:38:04,040 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-01')
-2026-06-10 08:38:04,041 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:04,041 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:04,041 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:04,041 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2629000.0, 'Giáo dục': 5498000.0, 'Giải trí': 5350000.0, 'Khác': 7878000.0, 'Mua sắm': 23619000.0, 'Sức khỏe': 2813000.0, 'Tiền thuê': 12831000.0, 'Ăn uống': 11142000.0}
-2026-06-10 08:38:04,041 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-01 thành công. Số danh mục: 0
-2026-06-10 08:38:12,913 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
-2026-06-10 08:38:13,313 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
-2026-06-10 08:38:13,313 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:38:13,314 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:13,314 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:13,317 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:13,319 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:38:13,321 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
-2026-06-10 08:38:13,321 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
-2026-06-10 08:38:13,321 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:38:13,322 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:13,322 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:13,326 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:13,327 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:38:13,330 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 5
-2026-06-10 08:38:13,339 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
-2026-06-10 08:38:13,605 [INFO] [stats_tab.py:update_charts:159] - Vẽ lại biểu đồ thống kê theo tháng: 2026-01
-2026-06-10 08:38:13,614 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
-2026-06-10 08:38:13,615 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:13,615 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:13,617 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:13,618 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1000 giao dịch.
-2026-06-10 08:38:13,647 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-01
-2026-06-10 08:38:13,647 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-01')
-2026-06-10 08:38:13,647 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-01')
-2026-06-10 08:38:13,647 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:13,647 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:13,647 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:13,648 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
-2026-06-10 08:38:13,648 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-01')
-2026-06-10 08:38:13,648 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
-2026-06-10 08:38:13,648 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
-2026-06-10 08:38:13,648 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
-2026-06-10 08:38:13,648 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2629000.0, 'Giáo dục': 5498000.0, 'Giải trí': 5350000.0, 'Khác': 7878000.0, 'Mua sắm': 23619000.0, 'Sức khỏe': 2813000.0, 'Tiền thuê': 12831000.0, 'Ăn uống': 11142000.0}
-2026-06-10 08:38:13,648 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-01 thành công. Số danh mục: 0
-2026-06-10 08:38:26,973 [INFO] [dashboard_window.py:_on_window_destroy:162] - Giải phóng tài nguyên biểu đồ của DashboardWindow và các Tabs con
-2026-06-10 08:38:26,986 [INFO] [stats_tab.py:cleanup:575] - Giải phóng tài nguyên biểu đồ của StatsTab
-2026-06-10 08:38:26,991 [INFO] [budget_tab.py:cleanup:498] - Giải phóng tài nguyên biểu đồ của BudgetTab
-2026-06-10 08:38:26,994 [INFO] [alerts_tab.py:cleanup:229] - Giải phóng tài nguyên biểu đồ của AlertsTab
-2026-06-10 08:38:27,003 [INFO] [savings_tab.py:cleanup:338] - Giải phóng tài nguyên biểu đồ của SavingsTab
-2026-06-10 08:40:03,636 [INFO] [main.py:main:55] - Ứng dụng kết thúc bình thường.
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 10:49:03,740 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 10:49:04,246 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 10:49:08,734 [DEBUG] [main_controller.py:get_categories:247] - Gọi get_categories() từ View.
+2026-06-10 10:49:08,734 [DEBUG] [finance_service.py:get_categories:22] - Gọi get_categories()
+2026-06-10 10:49:08,735 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 10:49:08,735 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 10:49:08,735 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 10:49:08,735 [DEBUG] [finance_service.py:get_categories:29] - Kết quả get_categories(): Lấy ra 6 danh mục.
+2026-06-10 10:49:47,184 [DEBUG] [main_controller.py:get_categories:247] - Gọi get_categories() từ View.
+2026-06-10 10:49:47,184 [DEBUG] [finance_service.py:get_categories:22] - Gọi get_categories()
+2026-06-10 10:49:47,184 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 10:49:47,185 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 10:49:47,185 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 10:49:47,185 [DEBUG] [finance_service.py:get_categories:29] - Kết quả get_categories(): Lấy ra 6 danh mục.
+2026-06-10 10:59:12,932 [INFO] [main.py:main:25] - =========================================
+2026-06-10 10:59:12,932 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
+2026-06-10 10:59:12,932 [INFO] [main.py:main:27] - =========================================
+2026-06-10 10:59:12,932 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
+2026-06-10 10:59:12,932 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
+2026-06-10 10:59:12,933 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 10:59:12,933 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 10:59:12,933 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
+2026-06-10 10:59:12,933 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
+2026-06-10 10:59:12,933 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
+2026-06-10 10:59:12,933 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
+2026-06-10 10:59:12,933 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
+2026-06-10 10:59:12,933 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
+2026-06-10 10:59:12,933 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
+2026-06-10 10:59:12,934 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
+2026-06-10 10:59:12,934 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
+2026-06-10 10:59:13,225 [INFO] [main_window.py:__init__:97] - MainWindow initialized and UI components rendered.
+2026-06-10 10:59:13,225 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
+2026-06-10 10:59:13,225 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
+2026-06-10 10:59:13,225 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
+2026-06-10 10:59:13,225 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
+2026-06-10 10:59:13,225 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
+2026-06-10 10:59:13,226 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 10:59:13,226 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 10:59:13,228 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 10:59:13,228 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1001 bản ghi.
+2026-06-10 10:59:13,237 [INFO] [main_window.py:apply_filters:329] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
+2026-06-10 10:59:13,267 [DEBUG] [main_window.py:task:358] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1001
+2026-06-10 10:59:13,272 [DEBUG] [main_window.py:task:409] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
+2026-06-10 10:59:13,277 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
+2026-06-10 10:59:13,277 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
+2026-06-10 10:59:13,277 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
+2026-06-10 10:59:13,627 [DEBUG] [main_window.py:task:426] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1001
+2026-06-10 10:59:13,866 [INFO] [main_window.py:_on_filter_success:443] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1001 bản ghi.
+2026-06-10 11:00:05,877 [INFO] [main.py:main:55] - Ứng dụng kết thúc bình thường.
+2026-06-10 11:00:14,954 [INFO] [main.py:main:25] - =========================================
+2026-06-10 11:00:14,954 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
+2026-06-10 11:00:14,954 [INFO] [main.py:main:27] - =========================================
+2026-06-10 11:00:14,955 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
+2026-06-10 11:00:14,955 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
+2026-06-10 11:00:14,955 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:00:14,955 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:00:14,955 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
+2026-06-10 11:00:14,956 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
+2026-06-10 11:00:14,956 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
+2026-06-10 11:00:14,956 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
+2026-06-10 11:00:14,956 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
+2026-06-10 11:00:14,956 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
+2026-06-10 11:00:14,956 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
+2026-06-10 11:00:14,956 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
+2026-06-10 11:00:14,956 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
+2026-06-10 11:00:15,215 [INFO] [main_window.py:__init__:97] - MainWindow initialized and UI components rendered.
+2026-06-10 11:00:15,215 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
+2026-06-10 11:00:15,215 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
+2026-06-10 11:00:15,215 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
+2026-06-10 11:00:15,215 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
+2026-06-10 11:00:15,215 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
+2026-06-10 11:00:15,215 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:00:15,216 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:00:15,218 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:00:15,218 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1001 bản ghi.
+2026-06-10 11:00:15,227 [INFO] [main_window.py:apply_filters:329] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
+2026-06-10 11:00:15,254 [DEBUG] [main_window.py:task:358] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1001
+2026-06-10 11:00:15,259 [DEBUG] [main_window.py:task:409] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
+2026-06-10 11:00:15,254 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
+2026-06-10 11:00:15,264 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
+2026-06-10 11:00:15,264 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
+2026-06-10 11:00:15,614 [DEBUG] [main_window.py:task:426] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1001
+2026-06-10 11:00:15,868 [INFO] [main_window.py:_on_filter_success:443] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1001 bản ghi.
+2026-06-10 11:00:59,667 [DEBUG] [main_controller.py:get_categories:247] - Gọi get_categories() từ View.
+2026-06-10 11:00:59,667 [DEBUG] [finance_service.py:get_categories:22] - Gọi get_categories()
+2026-06-10 11:00:59,667 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:00:59,667 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:00:59,668 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:00:59,668 [DEBUG] [finance_service.py:get_categories:29] - Kết quả get_categories(): Lấy ra 6 danh mục.
+2026-06-10 11:01:06,218 [DEBUG] [main_controller.py:get_categories:247] - Gọi get_categories() từ View.
+2026-06-10 11:01:06,219 [DEBUG] [finance_service.py:get_categories:22] - Gọi get_categories()
+2026-06-10 11:01:06,219 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:01:06,219 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:01:06,219 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:01:06,219 [DEBUG] [finance_service.py:get_categories:29] - Kết quả get_categories(): Lấy ra 6 danh mục.
+2026-06-10 11:01:06,264 [DEBUG] [main_controller.py:get_categories:247] - Gọi get_categories() từ View.
+2026-06-10 11:01:06,264 [DEBUG] [finance_service.py:get_categories:22] - Gọi get_categories()
+2026-06-10 11:01:06,264 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:01:06,264 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:01:06,264 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:01:06,264 [DEBUG] [finance_service.py:get_categories:29] - Kết quả get_categories(): Lấy ra 6 danh mục.
+2026-06-10 11:01:44,101 [DEBUG] [main_controller.py:get_categories:247] - Gọi get_categories() từ View.
+2026-06-10 11:01:44,101 [DEBUG] [finance_service.py:get_categories:22] - Gọi get_categories()
+2026-06-10 11:01:44,101 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:01:44,102 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:01:44,102 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:01:44,102 [DEBUG] [finance_service.py:get_categories:29] - Kết quả get_categories(): Lấy ra 6 danh mục.
+2026-06-10 11:03:28,354 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:03:28,354 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:03:28,354 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:03:28,358 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:03:28,360 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:03:29,040 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
+2026-06-10 11:03:29,697 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
+2026-06-10 11:03:29,891 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
+2026-06-10 11:03:29,891 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:03:29,892 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:03:29,892 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:03:29,895 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:03:29,898 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:03:29,901 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
+2026-06-10 11:03:29,901 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
+2026-06-10 11:03:29,901 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:03:29,902 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:03:29,902 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:03:29,905 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:03:29,907 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:03:29,911 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 13
+2026-06-10 11:03:29,927 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
+2026-06-10 11:03:30,187 [INFO] [stats_tab.py:update_charts:165] - Vẽ lại biểu đồ thống kê theo tháng: None
+2026-06-10 11:03:30,195 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:03:30,195 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:03:30,195 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:03:30,198 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:03:30,199 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:03:31,417 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
+2026-06-10 11:03:31,417 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:03:31,417 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:03:31,418 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:03:31,422 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:03:31,425 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:03:31,427 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
+2026-06-10 11:03:31,427 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
+2026-06-10 11:03:31,427 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:03:31,427 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:03:31,427 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:03:31,430 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:03:31,433 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:03:31,436 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 13
+2026-06-10 11:03:31,466 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
+2026-06-10 11:03:31,966 [INFO] [stats_tab.py:update_charts:165] - Vẽ lại biểu đồ thống kê theo tháng: None
+2026-06-10 11:03:31,975 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:03:31,976 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:03:31,976 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:03:31,979 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:03:31,980 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:03:34,783 [INFO] [dashboard_window.py:_on_window_destroy:162] - Giải phóng tài nguyên biểu đồ của DashboardWindow và các Tabs con
+2026-06-10 11:03:34,783 [INFO] [stats_tab.py:cleanup:581] - Giải phóng tài nguyên biểu đồ của StatsTab
+2026-06-10 11:03:34,783 [INFO] [budget_tab.py:cleanup:498] - Giải phóng tài nguyên biểu đồ của BudgetTab
+2026-06-10 11:03:34,783 [INFO] [alerts_tab.py:cleanup:229] - Giải phóng tài nguyên biểu đồ của AlertsTab
+2026-06-10 11:03:34,784 [INFO] [savings_tab.py:cleanup:338] - Giải phóng tài nguyên biểu đồ của SavingsTab
+2026-06-10 11:04:03,608 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:04:03,608 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:03,608 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:03,611 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:03,613 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:04:03,796 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
+2026-06-10 11:04:04,507 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
+2026-06-10 11:04:04,507 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:04:04,507 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:04,507 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:04,511 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:04,512 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:04:04,515 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
+2026-06-10 11:04:04,516 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
+2026-06-10 11:04:04,516 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:04:04,516 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:04,516 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:04,520 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:04,522 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:04:04,526 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 13
+2026-06-10 11:04:04,545 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
+2026-06-10 11:04:04,817 [INFO] [stats_tab.py:update_charts:165] - Vẽ lại biểu đồ thống kê theo tháng: None
+2026-06-10 11:04:04,824 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:04:04,825 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:04,825 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:04,827 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:04,829 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:04:13,051 [INFO] [main_controller.py:refresh_dashboard:202] - Yêu cầu cập nhật biểu đồ Dashboard hệ thống.
+2026-06-10 11:04:13,441 [DEBUG] [finance_service.py:get_expenses_by_category:235] - Gọi get_expenses_by_category()
+2026-06-10 11:04:13,441 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:04:13,441 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:13,441 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:13,446 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:13,449 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:04:13,452 [DEBUG] [finance_service.py:get_expenses_by_category:248] - Tính cơ cấu chi tiêu thành công. Số nhóm chi tiêu: 8
+2026-06-10 11:04:13,452 [DEBUG] [finance_service.py:get_spending_trend:255] - Gọi get_spending_trend() - chạy biểu đồ xu hướng chi tiêu
+2026-06-10 11:04:13,452 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:04:13,453 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:13,453 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:13,456 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:13,459 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:04:13,463 [DEBUG] [finance_service.py:get_spending_trend:273] - Tính toán xu hướng chi tiêu thành công. Số tháng: 13
+2026-06-10 11:04:13,467 [INFO] [main_controller.py:_on_dashboard_success:216] - Tải dữ liệu biểu đồ Dashboard thành công.
+2026-06-10 11:04:13,766 [INFO] [stats_tab.py:update_charts:165] - Vẽ lại biểu đồ thống kê theo tháng: 2026-05
+2026-06-10 11:04:13,776 [DEBUG] [finance_service.py:get_all_transactions:220] - Gọi get_all_transactions()
+2026-06-10 11:04:13,776 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:13,776 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:13,781 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:13,782 [DEBUG] [finance_service.py:get_all_transactions:228] - Kết quả get_all_transactions(): Lấy ra 1001 giao dịch.
+2026-06-10 11:04:13,809 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-05
+2026-06-10 11:04:13,809 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-05')
+2026-06-10 11:04:13,809 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-05')
+2026-06-10 11:04:13,809 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:13,809 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:13,810 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:13,810 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
+2026-06-10 11:04:13,810 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-05')
+2026-06-10 11:04:13,810 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:13,810 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:13,811 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:13,811 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2024000.0, 'Giáo dục': 8617000.0, 'Giải trí': 3666000.0, 'Khác': 6971000.0, 'Mua sắm': 15782000.0, 'Sức khỏe': 4575000.0, 'Tiền thuê': 9387000.0, 'Ăn uống': 10435000.0}
+2026-06-10 11:04:13,811 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-05 thành công. Số danh mục: 0
+2026-06-10 11:04:15,248 [DEBUG] [main_controller.py:get_usage:330] - Lấy bảng ngân sách sử dụng tháng 2026-05
+2026-06-10 11:04:15,248 [DEBUG] [finance_service.py:get_usage:474] - Gọi get_usage(month='2026-05')
+2026-06-10 11:04:15,248 [DEBUG] [finance_service.py:get_all_budgets:377] - Gọi get_all_budgets(month='2026-05')
+2026-06-10 11:04:15,249 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:15,249 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:15,249 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:15,249 [DEBUG] [finance_service.py:get_all_budgets:387] - Kết quả get_all_budgets(): Tìm thấy 0 hạn mức.
+2026-06-10 11:04:15,249 [DEBUG] [finance_service.py:get_spent_by_category:454] - Gọi get_spent_by_category(month='2026-05')
+2026-06-10 11:04:15,249 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:15,249 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:15,250 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:15,250 [DEBUG] [finance_service.py:get_spent_by_category:467] - Kết quả get_spent_by_category(): {'Di chuyển': 2024000.0, 'Giáo dục': 8617000.0, 'Giải trí': 3666000.0, 'Khác': 6971000.0, 'Mua sắm': 15782000.0, 'Sức khỏe': 4575000.0, 'Tiền thuê': 9387000.0, 'Ăn uống': 10435000.0}
+2026-06-10 11:04:15,250 [DEBUG] [finance_service.py:get_usage:506] - Lấy biểu đồ sử dụng ngân sách tháng 2026-05 thành công. Số danh mục: 0
+2026-06-10 11:04:15,254 [DEBUG] [main_controller.py:get_categories:247] - Gọi get_categories() từ View.
+2026-06-10 11:04:15,254 [DEBUG] [finance_service.py:get_categories:22] - Gọi get_categories()
+2026-06-10 11:04:15,254 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:15,254 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:15,254 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:15,254 [DEBUG] [finance_service.py:get_categories:29] - Kết quả get_categories(): Lấy ra 6 danh mục.
+2026-06-10 11:04:15,289 [DEBUG] [finance_service.py:get_budget:360] - Gọi get_budget(category='Ăn uống', month='2026-05')
+2026-06-10 11:04:15,289 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: D:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 11:04:15,289 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 11:04:15,289 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 11:04:15,289 [DEBUG] [finance_service.py:get_budget:370] - Kết quả get_budget(): Hạn mức=None
+2026-06-10 11:04:35,186 [INFO] [dashboard_window.py:_on_window_destroy:162] - Giải phóng tài nguyên biểu đồ của DashboardWindow và các Tabs con
+2026-06-10 11:04:35,187 [INFO] [stats_tab.py:cleanup:581] - Giải phóng tài nguyên biểu đồ của StatsTab
+2026-06-10 11:04:35,187 [INFO] [budget_tab.py:cleanup:498] - Giải phóng tài nguyên biểu đồ của BudgetTab
+2026-06-10 11:04:35,187 [INFO] [alerts_tab.py:cleanup:229] - Giải phóng tài nguyên biểu đồ của AlertsTab
+2026-06-10 11:04:35,187 [INFO] [savings_tab.py:cleanup:338] - Giải phóng tài nguyên biểu đồ của SavingsTab
+2026-06-10 16:29:15,351 [INFO] [main.py:main:25] - =========================================
+2026-06-10 16:29:15,352 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
+2026-06-10 16:29:15,353 [INFO] [main.py:main:27] - =========================================
+2026-06-10 16:29:15,353 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
+2026-06-10 16:29:15,353 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
+2026-06-10 16:29:15,353 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:29:15,358 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:29:15,358 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
+2026-06-10 16:29:15,362 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
+2026-06-10 16:29:15,362 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
+2026-06-10 16:29:15,362 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
+2026-06-10 16:29:15,362 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
+2026-06-10 16:29:15,362 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
+2026-06-10 16:29:15,363 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
+2026-06-10 16:29:15,363 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
+2026-06-10 16:29:15,363 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
+2026-06-10 16:29:17,233 [INFO] [main_window.py:__init__:97] - MainWindow initialized and UI components rendered.
+2026-06-10 16:29:17,233 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
+2026-06-10 16:29:17,233 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
+2026-06-10 16:29:17,233 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
+2026-06-10 16:29:17,234 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
+2026-06-10 16:29:17,234 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
+2026-06-10 16:29:17,234 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:29:17,234 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:29:17,243 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 16:29:17,243 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1001 bản ghi.
+2026-06-10 16:29:17,257 [INFO] [main_window.py:apply_filters:329] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
+2026-06-10 16:29:17,309 [DEBUG] [main_window.py:task:358] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1001
+2026-06-10 16:29:17,316 [DEBUG] [main_window.py:task:409] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
+2026-06-10 16:29:17,316 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
+2026-06-10 16:29:17,323 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
+2026-06-10 16:29:17,323 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
+2026-06-10 16:29:17,673 [DEBUG] [main_window.py:task:426] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1001
+2026-06-10 16:29:18,046 [INFO] [main_window.py:_on_filter_success:443] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1001 bản ghi.
+2026-06-10 16:29:19,823 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:29:20,600 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:29:20,806 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:29:20,980 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:29:21,822 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:29:22,019 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:29:22,194 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:29:22,360 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:29:22,535 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:29:22,729 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\All_in_One\Python\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:30:48,759 [INFO] [main.py:main:25] - =========================================
+2026-06-10 16:30:48,759 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
+2026-06-10 16:30:48,759 [INFO] [main.py:main:27] - =========================================
+2026-06-10 16:30:48,759 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
+2026-06-10 16:30:48,759 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
+2026-06-10 16:30:48,759 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:30:48,760 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:30:48,760 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
+2026-06-10 16:30:48,761 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
+2026-06-10 16:30:48,761 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
+2026-06-10 16:30:48,761 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
+2026-06-10 16:30:48,761 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
+2026-06-10 16:30:48,762 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
+2026-06-10 16:30:48,762 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
+2026-06-10 16:30:48,762 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
+2026-06-10 16:30:48,762 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
+2026-06-10 16:30:49,197 [INFO] [main_window.py:__init__:97] - MainWindow initialized and UI components rendered.
+2026-06-10 16:30:49,197 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
+2026-06-10 16:30:49,197 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
+2026-06-10 16:30:49,197 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
+2026-06-10 16:30:49,197 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
+2026-06-10 16:30:49,197 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
+2026-06-10 16:30:49,198 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:30:49,198 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:30:49,201 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 16:30:49,201 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1001 bản ghi.
+2026-06-10 16:30:49,211 [INFO] [main_window.py:apply_filters:329] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
+2026-06-10 16:30:49,268 [DEBUG] [main_window.py:task:358] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1001
+2026-06-10 16:30:49,276 [DEBUG] [main_window.py:task:409] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
+2026-06-10 16:30:49,268 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
+2026-06-10 16:30:49,281 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
+2026-06-10 16:30:49,281 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
+2026-06-10 16:30:49,631 [DEBUG] [main_window.py:task:426] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1001
+2026-06-10 16:30:50,726 [INFO] [main_window.py:_on_filter_success:443] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1001 bản ghi.
+2026-06-10 16:30:53,667 [ERROR] [ui_decorators.py:wrapper:31] - Lỗi xảy ra tại views.core.main_window.show_help: unknown option "-import"
+Traceback (most recent call last):
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\ui_decorators.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\views\core\main_window.py", line 729, in show_help
+    self.help_window = HelpWindow(self, self.icons)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\ctk_toplevel.py", line 36, in __init__
+    super().__init__(*args, **pop_from_dict_by_set(kwargs, self._valid_tk_toplevel_arguments))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2823, in __init__
+    BaseWidget.__init__(self, master, 'toplevel', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2774, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-import"
+2026-06-10 16:30:57,875 [INFO] [main.py:main:55] - Ứng dụng kết thúc bình thường.
+2026-06-10 16:32:45,823 [INFO] [main.py:main:25] - =========================================
+2026-06-10 16:32:45,823 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
+2026-06-10 16:32:45,823 [INFO] [main.py:main:27] - =========================================
+2026-06-10 16:32:45,823 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
+2026-06-10 16:32:45,823 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
+2026-06-10 16:32:45,824 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:32:45,824 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:32:45,824 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
+2026-06-10 16:32:45,824 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
+2026-06-10 16:32:45,825 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
+2026-06-10 16:32:45,825 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
+2026-06-10 16:32:45,825 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
+2026-06-10 16:32:45,825 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
+2026-06-10 16:32:45,825 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
+2026-06-10 16:32:45,825 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
+2026-06-10 16:32:45,825 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
+2026-06-10 16:32:46,040 [INFO] [main_window.py:__init__:97] - MainWindow initialized and UI components rendered.
+2026-06-10 16:32:46,040 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
+2026-06-10 16:32:46,040 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
+2026-06-10 16:32:46,040 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
+2026-06-10 16:32:46,040 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
+2026-06-10 16:32:46,040 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
+2026-06-10 16:32:46,041 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:32:46,041 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:32:46,043 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 16:32:46,043 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1001 bản ghi.
+2026-06-10 16:32:46,050 [INFO] [main_window.py:apply_filters:329] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
+2026-06-10 16:32:46,076 [DEBUG] [main_window.py:task:358] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1001
+2026-06-10 16:32:46,082 [DEBUG] [main_window.py:task:409] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
+2026-06-10 16:32:46,082 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
+2026-06-10 16:32:46,087 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
+2026-06-10 16:32:46,087 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
+2026-06-10 16:32:46,437 [DEBUG] [main_window.py:task:426] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1001
+2026-06-10 16:32:46,682 [INFO] [main_window.py:_on_filter_success:443] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1001 bản ghi.
+2026-06-10 16:32:59,778 [INFO] [main.py:main:55] - Ứng dụng kết thúc bình thường.
+2026-06-10 16:33:56,320 [INFO] [main.py:main:25] - =========================================
+2026-06-10 16:33:56,320 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
+2026-06-10 16:33:56,320 [INFO] [main.py:main:27] - =========================================
+2026-06-10 16:33:56,320 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
+2026-06-10 16:33:56,320 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
+2026-06-10 16:33:56,320 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:33:56,321 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:33:56,321 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
+2026-06-10 16:33:56,322 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
+2026-06-10 16:33:56,322 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
+2026-06-10 16:33:56,322 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
+2026-06-10 16:33:56,322 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
+2026-06-10 16:33:56,322 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
+2026-06-10 16:33:56,322 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
+2026-06-10 16:33:56,322 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
+2026-06-10 16:33:56,322 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
+2026-06-10 16:33:56,561 [INFO] [main_window.py:__init__:97] - MainWindow initialized and UI components rendered.
+2026-06-10 16:33:56,561 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
+2026-06-10 16:33:56,561 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
+2026-06-10 16:33:56,561 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
+2026-06-10 16:33:56,561 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
+2026-06-10 16:33:56,561 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
+2026-06-10 16:33:56,561 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:33:56,561 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:33:56,564 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 16:33:56,564 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1001 bản ghi.
+2026-06-10 16:33:56,571 [INFO] [main_window.py:apply_filters:329] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
+2026-06-10 16:33:56,597 [DEBUG] [main_window.py:task:358] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1001
+2026-06-10 16:33:56,597 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
+2026-06-10 16:33:56,603 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
+2026-06-10 16:33:56,603 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
+2026-06-10 16:33:56,602 [DEBUG] [main_window.py:task:409] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
+2026-06-10 16:33:56,959 [DEBUG] [main_window.py:task:426] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1001
+2026-06-10 16:33:57,173 [INFO] [main_window.py:_on_filter_success:443] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1001 bản ghi.
+2026-06-10 16:34:06,634 [INFO] [main.py:main:55] - Ứng dụng kết thúc bình thường.
+2026-06-10 16:38:14,889 [INFO] [main.py:main:25] - =========================================
+2026-06-10 16:38:14,889 [INFO] [main.py:main:26] - Khởi chạy ứng dụng Quản Lý Chi Tiêu Cá Nhân...
+2026-06-10 16:38:14,889 [INFO] [main.py:main:27] - =========================================
+2026-06-10 16:38:14,889 [INFO] [main.py:main:31] - Đang khởi tạo cơ sở dữ liệu...
+2026-06-10 16:38:14,889 [INFO] [database.py:initialize_db:53] - Bắt đầu khởi tạo các bảng cơ sở dữ liệu...
+2026-06-10 16:38:14,889 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:38:14,890 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:38:14,890 [DEBUG] [database.py:initialize_db:59] - Đang tạo bảng transactions nếu chưa tồn tại...
+2026-06-10 16:38:14,890 [DEBUG] [database.py:initialize_db:71] - Đang tạo bảng categories nếu chưa tồn tại...
+2026-06-10 16:38:14,890 [DEBUG] [database.py:initialize_db:79] - Đang tạo bảng budgets nếu chưa tồn tại...
+2026-06-10 16:38:14,890 [DEBUG] [database.py:initialize_db:90] - Đang tạo bảng savings_goals nếu chưa tồn tại...
+2026-06-10 16:38:14,890 [DEBUG] [database.py:initialize_db:99] - Kiểm tra và nạp danh mục mặc định...
+2026-06-10 16:38:14,890 [INFO] [database.py:initialize_db:107] - Tất cả các bảng DB đã được khởi tạo và commit thành công.
+2026-06-10 16:38:14,890 [DEBUG] [database.py:initialize_db:117] - Đã đóng kết nối Database an toàn.
+2026-06-10 16:38:14,890 [INFO] [main.py:main:33] - Khởi tạo cơ sở dữ liệu thành công.
+2026-06-10 16:38:14,891 [INFO] [main.py:main:41] - Đang khởi tạo các thành phần giao diện MVC...
+2026-06-10 16:38:15,091 [INFO] [main_window.py:__init__:95] - MainWindow initialized and UI components rendered.
+2026-06-10 16:38:15,091 [DEBUG] [finance_service.py:__init__:19] - Khởi tạo FinanceService thành công.
+2026-06-10 16:38:15,091 [DEBUG] [main_controller.py:__init__:22] - Khởi tạo MainController kết nối với View và FinanceService.
+2026-06-10 16:38:15,091 [INFO] [main_controller.py:load_initial_data:238] - Bắt đầu nạp dữ liệu ban đầu khi khởi động ứng dụng...
+2026-06-10 16:38:15,091 [DEBUG] [main_controller.py:refresh_history:229] - Yêu cầu refresh danh sách lịch sử giao dịch hiển thị.
+2026-06-10 16:38:15,091 [DEBUG] [finance_service.py:get_recent_transactions:280] - Gọi get_recent_transactions(limit=None, keyword='')
+2026-06-10 16:38:15,091 [DEBUG] [database.py:get_connection:19] - Đang kết nối tới SQLite Database: d:\Desktop\202606_LTPT_CNTTK2B_Nhom7\ltpt-btl-20261-tt02b_group-7\data\finance.db
+2026-06-10 16:38:15,091 [DEBUG] [database.py:get_connection:22] - Kết nối SQLite thành công.
+2026-06-10 16:38:15,094 [DEBUG] [database.py:db_session:50] - Đã đóng kết nối Database an toàn qua db_session.
+2026-06-10 16:38:15,094 [DEBUG] [finance_service.py:get_recent_transactions:300] - Lấy danh sách giao dịch gần đây thành công: Tìm thấy 1001 bản ghi.
+2026-06-10 16:38:15,101 [INFO] [main_window.py:apply_filters:327] - Bắt đầu thực hiện tìm kiếm / lọc giao dịch...
+2026-06-10 16:38:15,127 [DEBUG] [main_window.py:task:356] - Đang chạy thread lọc dữ liệu ngầm. Từ khóa: '', Loại: 'Tất cả', Số lượng thô: 1001
+2026-06-10 16:38:15,132 [DEBUG] [main_window.py:task:407] - Đang sắp xếp ngầm danh sách đã lọc theo: 'Thời gian' (desc)
+2026-06-10 16:38:15,127 [INFO] [main_controller.py:load_initial_data:241] - Nạp dữ liệu ban đầu hoàn tất.
+2026-06-10 16:38:15,136 [INFO] [main.py:main:45] - Khởi tạo MVC hoàn tất.
+2026-06-10 16:38:15,137 [INFO] [main.py:main:53] - Bắt đầu chạy mainloop của ứng dụng...
+2026-06-10 16:38:15,487 [DEBUG] [main_window.py:task:424] - Thread lọc ngầm hoàn tất thành công. Số kết quả: 1001
+2026-06-10 16:38:15,686 [INFO] [main_window.py:_on_filter_success:441] - Đã cập nhật kết quả lọc lên giao diện. Tìm thấy 1001 bản ghi.
+2026-06-10 16:38:16,364 [INFO] [main_window.py:show_help:736] - Đã mở trực tiếp file PDF hướng dẫn sử dụng.
+2026-06-10 16:38:19,665 [INFO] [main_window.py:show_help:736] - Đã mở trực tiếp file PDF hướng dẫn sử dụng.
+2026-06-10 16:38:23,305 [INFO] [main.py:main:55] - Ứng dụng kết thúc bình thường.
